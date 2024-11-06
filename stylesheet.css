@@ -1,0 +1,49 @@
+/*start på Style/font*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    padding: 1px;
+}
+
+/*slutt på Style/font*/
+
+/*start på header*/
+header{
+    justify-content: space-around;
+ 
+}
+.searchBar{
+    padding: 5px;
+    /* border-radius: 30px; Brukes senere*/
+    color: none;
+    padding: 11px;
+    margin: 0px;
+    background-color: transparent !important;
+    color: inherit !important;
+    border-color: black;
+    box-shadow: none;
+}
+#venstreForLogo{
+
+}
+
+#logo{
+    margin: auto;
+    padding: auto;
+}
+
+#høyreForLogo{
+    padding: auto;
+    margin: auto;
+}
+
+#heltHøyre{
+
+}
+
+/*slutt på header*/
+
+
+
