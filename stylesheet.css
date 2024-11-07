@@ -4,46 +4,169 @@
     text-decoration: none;
     color: inherit;
     list-style: none;
-    padding: 1px;
+    padding: 5px;
+    margin: 0px;
 }
-
 /*slutt på Style/font*/
 
+/*start på media Queries til mobile */
 /*start på header*/
-header{
-    justify-content: space-around;
- 
+
+@media only screen and (max-width: 416px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .searchfelt {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 0;
+        width: 300px;
+        background-color: transparent;
+        color: inherit;
+        align-items: center;
+    }
+/*• Søkefelter og knappen tilhørende søkefeltet skal ha lik mengde padding og endret
+border. */
+    #søkeIkon {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 307px;
+        padding: 7px;
+    }
+
+
+    #venstreForLogo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #høyreForLogo {
+        display: flex;
+        flex-direction: column;
+        
+    }
+/*Start på footer*/
+    footer{
+       
+        
+        padding: 20px;
+    }
+    
+  
+    h5 {
+        font-size: larger;
+    }
+
+    .snarveiBoks{
+        display: flex;
+        flex-direction: row;
+    }
+    #sneaky{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .medierIkonerBoks{
+    display: flex;
+    flex-direction: row;
+    }
+
+    #medieIkoner{
+        display: flex;
+        flex-direction: row;
+    } 
+        
+    /*Slutt på footer*/
 }
-.searchBar{
-    padding: 5px;
-    /* border-radius: 30px; Brukes senere*/
-    color: none;
-    padding: 11px;
-    margin: 0px;
-    background-color: transparent !important;
-    color: inherit !important;
-    border-color: black;
-    box-shadow: none;
+
+/*Start på Media Queries for PC*/
+@media only screen and (max-width: 1200px) and (min-width: 413px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /*søkebar*/
+    header form {
+        display: flex;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 5px;
+    }
+
+    .searchfelt {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 0;
+        width: 300px;
+        background-color: transparent;
+        color: inherit;
+    }
+
+    #søkeIkon {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 294px;
+    }
+
+    /*slutt på søkebar*/
+
+    #venstreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .høyreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
 }
-#venstreForLogo{
 
-}
-
-#logo{
-    margin: auto;
-    padding: auto;
-}
-
-#høyreForLogo{
-    padding: auto;
-    margin: auto;
-}
-
-#heltHøyre{
-
-}
-
-/*slutt på header*/
-
-
+/*Slutt på Media Queries for PC*/
 
