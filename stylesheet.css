@@ -1,4 +1,6 @@
 /*start på Style/font*/
+
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -12,101 +14,132 @@
 /*start på media Queries til mobile */
 /*start på header*/
 
-@media only screen and (max-width: 416px) {
+    #grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
     header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
         padding: 10px;
-    }
-
-    header form {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-    }
-
-    header nav ul {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-    }
+       
+    }*/
 
     .searchfelt {
-        display: flex;
-        flex-direction: column;
+        
+    }*/
+    #sokeIkon{
+       /*
+        left: 307px;
+        padding: 7px;
+        grid-column-start: 2;
+        grid-column-end: 4; 
+    */
+        }
+    
+    header form {
+          max-width: 600px;
+          position: relative;
+          margin: 0 auto;
+
+    }
+
+   #searchbtn {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        background-color: inherit;
+        border: none;   
+    }
+    
+    #logo{
+        margin: 0 auto;
+    }
+
+    #searchbtn i{
+        font-size: 18px;
+    }
+
+
+    form input {
+        width: 100%;
         border-radius: 20px;
         padding: 10px;
         border: 2px solid #000;
         margin: 0;
-        width: 300px;
         background-color: transparent;
         color: inherit;
-        align-items: center;
     }
+
+    header{ 
+        width: 100%;
+        
+    }
+
+    header nav ul {
+        
+    }
+footer{
+        display: grid;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    
 /*• Søkefelter og knappen tilhørende søkefeltet skal ha lik mengde padding og endret
 border. */
-    #søkeIkon {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        left: 307px;
-        padding: 7px;
-    }
 
 
     #venstreForLogo {
-        display: flex;
-        flex-direction: column;
+        
     }
 
-    #høyreForLogo {
-        display: flex;
-        flex-direction: column;
+    #hoyreForLogo {
+        
         
     }
 /*Start på footer*/
     footer{
-       
-        
+        /*
         padding: 20px;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        */
     }
-    
-  
+
     h5 {
         font-size: larger;
     }
 
     .snarveiBoks{
-        display: flex;
-        flex-direction: row;
+        
     }
     #sneaky{
-        display: flex;
-        flex-direction: column;
+        
     }
 
     .medierIkonerBoks{
-    display: flex;
-    flex-direction: row;
+    
     }
 
     #medieIkoner{
-        display: flex;
-        flex-direction: row;
+        
     } 
         
     /*Slutt på footer*/
-}
+
 
 /*Start på Media Queries for PC*/
+/*
 @media only screen and (max-width: 1200px) and (min-width: 413px) {
     header {
         display: flex;
@@ -114,8 +147,9 @@ border. */
         align-items: center;
         padding: 10px;
     }
-
+*/
     /*søkebar*/
+    /*
     header form {
         display: flex;
         align-items: center;
@@ -151,7 +185,7 @@ border. */
     }
 
     /*slutt på søkebar*/
-
+/*
     #venstreForLogo {
         display: flex;
         flex-direction: row;
@@ -167,6 +201,6 @@ border. */
         flex-direction: row;
     }
 }
-
+*/
 /*Slutt på Media Queries for PC*/
 
