@@ -11,7 +11,7 @@
 }
 /*slutt på Style/font*/
 
-/*start på media Queries til mobile */
+/*start på Default media Queries til mobile */
 /*start på header*/
 
     #grid-container{
@@ -37,7 +37,22 @@
         margin: 0 auto;
 
     }
-    
+
+    header nav #heltHoyre {
+        display: flex;
+        flex-direction: row;
+    }
+    header nav {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        justify-items: center;
+        align-items: center;
+
+    }
+
    #searchbtn {
         position: absolute;
         top: -1px;
@@ -67,53 +82,110 @@
     }
 
 
-
-    header nav ul {
-        
+    h5 {
+        font-size: larger;
     }
-footer{
+   /*Start på footer*/ 
+   header, main, aside, footer{
+        flex-grow: 1;
+        padding: 1rem;
+   }
+   
+    footer{
         display: grid;
         grid-row-start: 4;
         grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+/*Footer med grid*/
+/*
+    #medieIkoner {
+        display: grid;
+        grid-row-start: 1;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    #textBunn{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
     }
     
-/*• Søkefelter og knappen tilhørende søkefeltet skal ha lik mengde padding og endret
-border. */
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .sectionFooter2{
+
+    }
+
+    .sectionFooter1 .sectionFooter2{
+        grid-template-columns: auto;
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+        padding: 0px;
+        width: 100%;
+        max-width: 100px;
+        border: none;
+    }
+*/
+
+/* FOOTER MED FLEXBOX*/
+    #medieIkoner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #textBunn{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    
+    .sectionFooter{
+        display:flex;
+        gap: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .sectionFooter1 .sectionFooter2{
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+        padding: 0px;
+        width: 100%;
+        max-width: 100px;
+        border: none;
+    }
+    
+
 
 
     
-/*Start på footer*/
+/*
     footer{
-        /*
+        
         padding: 20px;
         display: grid;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        */
+       
     }
-
-    h5 {
-        font-size: larger;
-    }
-
-    .snarveiBoks{
-        
-    }
-    #sneaky{
-        
-    }
-
-    .medierIkonerBoks{
+ */
     
-    }
 
-    #medieIkoner{
-        
-    } 
         
     /*Slutt på footer*/
 
