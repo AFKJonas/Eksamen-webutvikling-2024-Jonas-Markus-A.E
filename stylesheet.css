@@ -11,7 +11,7 @@
 }
 /*slutt på Style/font*/
 
-/*start på Default media Queries til mobile */
+/*Default CSS pga. Mobile First */
 /*start på header*/
 
     #grid-container{
@@ -70,6 +70,7 @@
     #logo{
         margin: 0 auto;
     }
+    
 
     form input {
         width: 100%;
@@ -85,12 +86,13 @@
     h5 {
         font-size: larger;
     }
+    .marker{
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
    /*Start på footer*/ 
-   header, main, aside, footer{
-        flex-grow: 1;
-        padding: 1rem;
-   }
-   
+  
     footer{
         display: grid;
         grid-row-start: 4;
@@ -143,6 +145,11 @@
     #medieIkoner {
         display: flex;
         flex-direction: row;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        text-align: left;
+
     }
 
     #textBunn{
@@ -163,62 +170,102 @@
         padding: 20px;
         gap: 20px;
         padding: 0px;
+        margin: 0;
+        border: 0;
         width: 100%;
         max-width: 100px;
         border: none;
     }
-    
 
-
-
-    
-/*
-    footer{
-        
-        padding: 20px;
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-       
-    }
- */
-    
-
-        
     /*Slutt på footer*/
 
+    /*Main start*/
+    main{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 10px;
+        width: 100%; 
+    }
+    /*Slider*/
+    #section1{
+        background-image: url(267-3796x2541.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #section1 button{
+        border-radius: 20px;
+        
+    }
 
-/*Start på Media Queries for PC*/
-/*
+    /*section2*/
+    #section2 ul li button{
+        border-radius: 20px;
+        background-color: inherit;
+    }
+    #buttonBlackich{
+        border-radius: 20px; 
+        background-color: #000;    
+    }
 
-@media only screen and (min-width: 413px){
+    main section div article a button{
+        border-radius: 100px;
+        position: absolute;
+        top: 765px;
+        right: 223px;
+        background-color: inherit;
+        padding: 10px;
+        
+    }
+    
+    .hjertebtn i{
+        font-size: 18px;
+        
+    }
+    
+
+
+
+
+
+    /*Main slutt*/
+
+/*/*
+@media only screen and (max-width: 411px){} = Lik eller mindre (MINDRE enn)
+
+@media only screen and (max-width: 411px) and (min-width: 1893px) {}  ALT SOM ER MELLOM 411 og 1893 blir skrevet ut
+
+
+/*Start på Media Queries for Tablet *//*
+@media only screen and (max-width: 411px) and (min-width: 1893px) {
 
 }
+/*
+/*Start på Media Queries for Tablet *//*
 @media only screen and (min-width: 900px){
 
 }
 
-
-@media only screen and (max-width: 1200px) and (min-width: 413px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
-
-@media only screen and (max-width: 1200px) and (min-width: 413px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
 */
-    /*søkebar*/
-    /*
+/*Start på Media Queries for PC*//*
+
+@media only screen and (min-width: 413px){
+/*
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /*søkebar*//*
     header form {
         display: flex;
         align-items: center;
@@ -233,7 +280,7 @@
         display: flex;
         gap: 5px;
     }
-
+*//*
     .searchfelt {
         display: flex;
         flex-direction: row;
@@ -272,4 +319,40 @@
 }
 */
 /*Slutt på Media Queries for PC*/
+}
+
+/*Product sides Innhold*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

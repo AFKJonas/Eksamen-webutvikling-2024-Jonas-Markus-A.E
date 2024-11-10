@@ -1,0 +1,152 @@
+
+@media only screen and (min-width:1294px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /*søkebar*/
+    header form {
+        display: flex;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 5px;
+    }
+
+    .searchfelt {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 0;
+        width: 300px;
+        background-color: transparent;
+        color: inherit;
+    }
+
+    #søkeIkon {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 294px;
+    }
+
+    /*slutt på søkebar*/
+
+    #venstreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .høyreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
+}
+/*slutt på header*/
+/*slutt på header*/
+
+
+
+
+
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    width: 100%;
+   
+}
+
+header form {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+header nav #heltHoyre {
+    display: flex;
+    flex-direction: row;
+}
+header nav {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#searchbtn {
+    position: absolute;
+    top: -1px;
+    right: 6px;
+    background-color: inherit;
+    border: none; 
+    padding: 10px;   
+}
+
+#searchbtn i{
+font-size: 18px;
+}
+
+
+#logo{
+    margin: 0 auto;
+}
+
+
+form input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+
+h5 {
+    font-size: larger;
+}
+/*Start på footer*/ 
+
+footer{
+    display: grid;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 0;
+    margin: 0 auto;
+    
+}
