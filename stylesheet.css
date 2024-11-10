@@ -191,7 +191,7 @@
     }
     /*Slider*/
     #section1{
-        background-image: url(267-3796x2541.jpg);
+        background-image: url(Bilder/267-3796x2541.jpg);
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -217,18 +217,85 @@
 
     main section div article a button{
         border-radius: 100px;
-        position: absolute;
-        top: 765px;
-        right: 223px;
+        position: absolute;   
         background-color: inherit;
         padding: 10px;
         
     }
-    
-    .hjertebtn i{
-        font-size: 18px;
+
+    .populareProduktKort{
+        position: relative;
+    }
+
+    .hjertebtn{
+        position: absolute;
+        background-color: inherit;
         
     }
+
+    .hjertebtn i{
+        font-size: 18px;
+   
+    }
+
+    /*section 3*/
+    #section3{
+        text-align: center;
+        text-decoration: white solid caption;
+    }
+    #c1{
+        background-image: url(Bilder/21-3008x2008.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c2{ 
+        background-image: url(Bilder/248-3872x2592.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c3{ 
+        background-image: url(Bilder/60-1920x1200.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c4{ 
+        background-image: url(Bilder/157-5000x3914.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c5{ 
+        background-image: url(Bilder/96-4752x3168.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+
+    
     
 
 
@@ -319,11 +386,26 @@
 }
 */
 /*Slutt på Media Queries for PC*/
-}
+
+
+
+
+
+
+
+
+
 
 /*Product sides Innhold*/
 
 
+/*Brødsmule sti*/
+
+/*Hovedområde*/
+
+/*sideopmråde*/
+
+/*4 produkt kort samme som på index de mest populære*/
 
 
 
