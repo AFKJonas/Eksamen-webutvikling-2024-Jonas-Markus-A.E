@@ -163,3 +163,454 @@ footer{
                     <label for="epost">E-post:</label>
                     <input type="email" id="epost" name="epost" required>
                     <button id="fortsettBtn">Fortsett til betaling</button>
+
+
+
+
+
+
+
+                    ---------------------------------------
+
+                    /*start på Style/font*/
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+}
+/*slutt på Style/font*/
+
+/*Default CSS pga. Mobile First */
+/*start på header*/
+
+    #grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    header {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+       
+    }
+
+    header form {
+        max-width: 600px;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    header nav #heltHoyre {
+        display: flex;
+        flex-direction: row;
+    }
+    header nav {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        justify-items: center;
+        align-self: center;
+        
+
+    }
+
+   #searchbtn {
+        position: absolute;
+        top: -1px;
+        right: 6px;
+        background-color: inherit;
+        border: none; 
+        padding: 10px;   
+    }
+
+    #searchbtn i{
+    font-size: 18px;
+    }
+
+
+    #logo{
+        margin: 0 auto;
+    }
+    
+
+    form input {
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 0;
+        background-color: transparent;
+        color: inherit;
+    }
+
+
+    h5 {
+        font-size: larger;
+    }
+    .marker{
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+   /*Start på footer*/ 
+  
+    footer{
+        display: grid;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+/*Footer med grid*/
+/*
+    #medieIkoner {
+        display: grid;
+        grid-row-start: 1;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    #textBunn{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .sectionFooter2{
+
+    }
+
+    .sectionFooter1 .sectionFooter2{
+        grid-template-columns: auto;
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+        padding: 0px;
+        width: 100%;
+        max-width: 100px;
+        border: none;
+    }
+*/
+
+/* FOOTER MED FLEXBOX*/
+    #medieIkoner {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        text-align: left;
+
+    }
+
+    #textBunn{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    
+    .sectionFooter{
+        display:flex;
+        gap: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .sectionFooter1 .sectionFooter2{
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+        padding: 0px;
+        margin: 0;
+        border: 0;
+        width: 100%;
+        max-width: 100px;
+        border: none;
+    }
+
+    /*Slutt på footer*/
+
+    /*Main start*/
+    main{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 10px;
+        width: 100%; 
+    }
+    /*Slider*/
+    #section1{
+        background-image: url(Bilder/267-3796x2541.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #section1 button{
+        border-radius: 20px;
+        
+    }
+
+    /*section2*/
+    #section2 ul li button{
+        border-radius: 20px;
+        background-color: inherit;
+    }
+    #buttonBlackich{
+        border-radius: 20px; 
+        background-color: #000;    
+    }
+
+    main section div article a button{
+        border-radius: 100px;
+        position: absolute;   
+        background-color: inherit;
+        padding: 10px;
+        
+    }
+
+    .populareProduktKort{
+        position: relative;
+    }
+
+    .hjertebtn{
+        position: absolute;
+        background-color: inherit;
+        
+    }
+
+    .hjertebtn i{
+        font-size: 18px;
+   
+    }
+
+    /*section 3*/
+    #section3{
+        text-align: center;
+        text-decoration: white solid caption;
+    }
+    #c1{
+        background-image: url(Bilder/21-3008x2008.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c2{ 
+        background-image: url(Bilder/248-3872x2592.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c3{ 
+        background-image: url(Bilder/60-1920x1200.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c4{ 
+        background-image: url(Bilder/157-5000x3914.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #c5{ 
+        background-image: url(Bilder/96-4752x3168.jpg);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+
+    
+    
+
+
+
+
+
+    /*Main slutt*/
+
+/*/*
+@media only screen and (max-width: 411px){} = Lik eller mindre (MINDRE enn)
+
+@media only screen and (max-width: 411px) and (min-width: 1893px) {}  ALT SOM ER MELLOM 411 og 1893 blir skrevet ut
+
+
+/*Start på Media Queries for Tablet *//*
+@media only screen and (max-width: 411px) and (min-width: 1893px) {
+
+}
+/*
+/*Start på Media Queries for Tablet *//*
+@media only screen and (min-width: 900px){
+
+}
+
+*/
+/*Start på Media Queries for PC*//*
+
+@media only screen and (min-width: 413px){
+/*
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /*søkebar*//*
+    header form {
+        display: flex;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 5px;
+    }
+*//*
+    .searchfelt {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 0;
+        width: 300px;
+        background-color: transparent;
+        color: inherit;
+    }
+
+    #søkeIkon {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 294px;
+    }
+
+    /*slutt på søkebar*/
+/*
+    #venstreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .høyreForLogo {
+        display: flex;
+        flex-direction: row;
+    }
+}
+*/
+/*Slutt på Media Queries for PC*/
+
+
+
+
+
+
+
+
+
+
+/*Product sides Innhold*/
+
+
+/*Brødsmule sti*/
+
+/*Hovedområde*/
+
+/*sideopmråde*/
+
+/*4 produkt kort samme som på index de mest populære*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
