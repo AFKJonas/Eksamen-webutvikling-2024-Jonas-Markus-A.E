@@ -13,19 +13,22 @@
     <div id="grid-container">
     <header>
             <form>
-                    
                     <input type="search" placeholder="søk her " class="searchfelt">
                     <button id="searchbtn"><i class="fa-solid fa-search"></i></button>
             </form>
             <nav>
                 <ul id="venstreForLogo">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#section2">Produkter</a></li>
+                    <li class="midt"><a href="index.html">Hjem</a></li>
+                </ul>
+                <ul>
+                    <li class="midt"><a href="#section2">Produkter</a></li>
                 </ul>
                 <a href="index.html" class="logo"><h1 >Logo</h1></a>
                 <ul id="hoyreForLogo">
-                    <li><a href="#section3">Kategorier</a></li>
-                    <li><a href="#footerKontaktOss">Kontakt oss</a></li>
+                    <li class="midt"><a href="#section3">Kategorier</a></li>
+                </ul>
+                <ul>
+                    <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
                 </ul>    
                 <ul id="heltHoyre">
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
@@ -35,19 +38,15 @@
             </nav>
         </header>
         
-        <main>
+        <main id="flex-container">
             <section id="section1">
-                <header>
                     <h2>Etiam id facilisis neque. Morbi sodales luctus euismod.</h2>
-                </header>
                 <p>Pellentesque posuere mi a orci ullamcorper accumsan. Aenean aliquam mollis dolor. Pellentesque placerat ultricies nisi, nec accumsan velit dictum eget.</p>
                 <button>Les mer om nec accumsan</button>
             </section>
 
             <section id="section2">
-                <header>
                     <h3>Våre mest populære produkter</h3>
-                </header>
                 <p>Oppdag det beste av det beste</p>
                 <ul id="sectionButtons">
                     <li ><button id="buttonBlackich">New Product</button></li>
@@ -56,7 +55,6 @@
                 </ul>
                 <div id="produktKort">
                     <article class="populareProduktKort">
-                        <h6 class="hidden">Product name</h6>
                         <button class="hjerteBtn"><i class="fa-regular fa-heart"></i></button>
                         <ul>
                             <li ><a href="product.html" class="marker">Product name</a></li>

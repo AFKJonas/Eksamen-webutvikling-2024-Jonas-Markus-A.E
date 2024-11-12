@@ -14,7 +14,10 @@
     #grid-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: repeat(9,1fr);
+    }
+    #flex-container{
+        display: flex;
     }
 
     header {
@@ -23,9 +26,16 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         align-items: center;
+        position: absolute;
+        top:auto;
+        right: 20px;
+        justify-items: center;
+        justify-content: center;
+        height: auto;
+
        
     }
 
@@ -36,23 +46,25 @@
 
     }
 
-    header nav #heltHoyre {
+    header nav{
+        display: flex;
+        align-items: center;
+        align-content: center; 
+    } 
+    #hoyreForLogo{
+        display: flex;
+        align-items: center;
+    }
+    #heltHoyre {
         display: flex;
         flex-direction: row;
     }
     header nav {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        justify-items: center;
-        align-self: center;
-        
-
-    }
-
-   #searchbtn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    #searchbtn {
         position: absolute;
         top: -1px;
         right: 6px;
@@ -64,8 +76,6 @@
     #searchbtn i{
     font-size: 18px;
     }
-
-
     #logo{
         margin: 0 auto;
     }
@@ -191,25 +201,52 @@
     /*Slider*/
     #section1{
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
         background-image: url(Bilder/267-3796x2541.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+        width: 96%;
+        height: 17%;
+        align-items: flex-end;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+        text-align: end;
+        border-radius: 20px;
+        border: 0;
+        padding: 0;
+        margin: 0;
     }
+    main section h3{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 50%;
+        top: 50px;
+        
+    }
+    main section p{
+        width: 52%;
+        position: relative; 
+        top: -30px; 
+    }
+
     #section1 button{
         border-radius: 20px;
-        
+        position: relative;
+        top: -28px;
     }
 
     /*section2*/
+    #section2{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
     #section2 ul li button{
-        border-radius: 20px;
+        border-radius: -40px;
         background-color: inherit;
     }
     #buttonBlackich{
