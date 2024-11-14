@@ -7,7 +7,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+    /*index.html*/
     .flex-container{
         display: flex;
         flex-direction: column;
@@ -43,18 +43,35 @@
     header nav ul, li, a{
         padding: 0;
         margin: 0;
+        padding: 0;
+        width: 87px;
     }
 
-    header nav a, h1{
+    .logo{
+        width: 60px;
+    }
+
+    h1{
         padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
     }
+    
     #heltHoyre{
         gap: 13px;
         display: flex;
         flex-direction: column;
     }
-
+    .fa-regular{
+        /*Kopiert linjene under ifra ChatGPT.com*/
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+        /*Kopier linjene over ifra ChatGPT.com*/
+    }
 
 
     /*Header slutt*/
@@ -90,6 +107,7 @@
         text-transform: uppercase;
         text-decoration: black;
         padding: 10px;
+        font-weight: bold;
     }
     /*Section 1 slutt*/
     /*Section 2 start*/
@@ -107,12 +125,17 @@
         border-color: black; 
         width: 100%; 
         position: relative;
-        top: 20px;  
+        top: 20px; 
+        gap: 14px; 
     }
     #section2 p{
         position: relative;
-        top: 13px;
+        top: 32px;
     } 
+    #section2 h3{
+        top: 45px;
+        position: relative;
+    }
     
 
     #sectionButtons li a{
@@ -120,7 +143,11 @@
         width: 100%;
         position: relative;
         border: 1px solid black;
-        padding-left: 20px;
+        padding-top: 13px;
+        padding-right: 13px;
+        padding-bottom: 13px;
+        padding-left: 15px;
+        
     }
 
     #sectionButtons li{
@@ -246,13 +273,19 @@
     }
 
     /*Section 4 slutt*/
+
+    
+
     /*Footer start*/
     footer{
         position: relative;
-        top: 100px;
+        top: 137px;
         display: flex;
         flex-direction: column;
         gap: 23px;
+        border-top-style: outset;
+        border-top-color: #80808075;
+        border-top-width: 1px;
     }
 
     footer section ul, li, i{
@@ -260,9 +293,11 @@
     }
 
     footer section{
-        gap: 21px;
+        gap: 22px;
         display: flex;
         flex-direction: column;
+        top: 25px;
+        position: relative;
     }
     footer section ul{
         gap: 9px;
@@ -281,15 +316,23 @@
     footer section a, h5{
         padding: 0;
     }
-
-
-
-
-
-
+    
     /*Footer slutt*/
 
+    /*Product.html*/
 
-
+    #breadCrumbs{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #breadCrumbs p, a{
+        
+    }
+    #breadCrumbs p, a, i{
+        display: flex;
+        
+        
+        
+    }
     
    
