@@ -5,475 +5,291 @@
     list-style: none;
     padding: 5px;
     margin: 0px;
+    box-sizing: border-box;
 }
-/*slutt på Style/font*/
 
-/*Default CSS pga. Mobile First */
-/*start på header*/
-
-    #grid-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(9,1fr);
-    }
-    #flex-container{
+    .flex-container{
         display: flex;
+        flex-direction: column;
+}
+
+    /*Header start*/
+    #globalHeader, form{ 
+        display: flex;
+        justify-content: flex-start;
+        height: 40px; 
     }
-
-    header {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding: 0px;
-        width: 100%;
-        align-items: center;
-        position: absolute;
-        top:auto;
-        right: 20px;
-        justify-items: center;
-        justify-content: center;
-        height: auto;
-
-       
+    header form input{
+        background-color: white;
+        border: 1px solid black;
     }
-
-    header form {
-        max-width: 600px;
+    button{
+        display: flex;
+        padding: 6px;
+        border-radius: 1px;
+        background-color: white;
+        border: 1px solid black;
+        width: 30px;
         position: relative;
-        margin: 0 auto;
-
+        right: -3px;
     }
-
     header nav{
         display: flex;
-        align-items: center;
-        align-content: center; 
-    } 
-    #hoyreForLogo{
-        display: flex;
-        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column; 
+        gap: 15px;
     }
-    #heltHoyre {
-        display: flex;
-        flex-direction: row;
+
+    header nav ul, li, a{
+        padding: 0;
+        margin: 0;
     }
-    header nav {
+
+    header nav a, h1{
+        padding: 0;
+        margin: 0;
+    }
+    #heltHoyre{
+        gap: 13px;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        }
-    #searchbtn {
-        position: absolute;
-        top: -1px;
-        right: 6px;
-        background-color: inherit;
-        border: none; 
-        padding: 10px;   
-    }
-
-    #searchbtn i{
-    font-size: 18px;
-    }
-    #logo{
-        margin: 0 auto;
-    }
-    
-
-    form input {
-        width: 100%;
-        border-radius: 20px;
-        padding: 10px;
-        border: 2px solid #000;
-        margin: 0;
-        background-color: transparent;
-        color: inherit;
     }
 
 
-    h5 {
-        font-size: larger;
-    }
-    .marker{
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
-   /*Start på footer*/ 
-  
-    footer{
-        display: grid;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        padding: 0;
-        margin: 0 auto;
-        
-    }
-/*Footer med grid*/
-/*
-    #medieIkoner {
-        display: grid;
-        grid-row-start: 1;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
 
-    #textBunn{
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-    
-    .sectionFooter{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        justify-content: space-between;
-        text-align: left;
-    }
-    .sectionFooter2{
+    /*Header slutt*/
 
-    }
-
-    .sectionFooter1 .sectionFooter2{
-        grid-template-columns: auto;
-        flex: 1;
-        padding: 20px;
-        gap: 20px;
-        padding: 0px;
-        width: 100%;
-        max-width: 100px;
-        border: none;
-    }
-*/
-
-/* FOOTER MED FLEXBOX*/
-    #medieIkoner {
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        text-align: left;
-
-    }
-
-    #textBunn{
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-    
-    .sectionFooter{
-        display:flex;
-        gap: 20px;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    .sectionFooter1 .sectionFooter2{
-        flex: 1;
-        padding: 20px;
-        gap: 20px;
-        padding: 0px;
-        margin: 0;
-        border: 0;
-        width: 100%;
-        max-width: 100px;
-        border: none;
-    }
-
-    /*Slutt på footer*/
-
-    /*Main start*/
+    /*MAIN*/
+    /*Section 1 start*/
     main{
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        padding: 0;
-        width: 100%; 
-    }
-    /*Slider*/
+        justify-content: flex-start;
+} 
+   
     #section1{
         display: flex;
+        background-color: rgb(187, 185, 185);
         justify-content: flex-end;
-        background-image: url(Bilder/267-3796x2541.jpg);
-        width: 96%;
-        height: 17%;
-        align-items: flex-end;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
+        align-items: center;
         text-align: end;
-        border-radius: 20px;
-        border: 0;
-        padding: 0;
-        margin: 0;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+        height: 300px;
+} 
+
+    #section1 section p{
+        margin: 7px;
+        padding: 15px;  
     }
-    main section h3{
+  
+    #section1 section a{
+        border-radius: 0px;
+        background-color: white;
+        background-position: 100%;
+        margin: 10px;
+        text-transform: uppercase;
+        text-decoration: black;
+        padding: 10px;
+    }
+    /*Section 1 slutt*/
+    /*Section 2 start*/
+    #section2{
         display: flex;
+        align-items: flex-start;
         flex-direction: column;
         position: relative;
-        width: 50%;
-        top: 50px;
-        
-    }
-    main section p{
-        width: 52%;
-        position: relative; 
-        top: -30px; 
-    }
-
-    #section1 button{
-        border-radius: 20px;
-        position: relative;
-        top: -28px;
-    }
-
-    /*section2*/
-    #section2{
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    #section2 ul li button{
-        border-radius: -40px;
-        background-color: inherit;
-    }
-    #buttonBlackich{
-        border-radius: 20px; 
-        background-color: #000;    
-    }
-
-    main section div article a button{
-        border-radius: 100px;
-        position: absolute;   
-        background-color: inherit;
-        padding: 10px;
-        
-    }
-
-    .populareProduktKort{
-        position: relative;
-    }
-
-    .hjertebtn{
-        position: absolute;
-        background-color: inherit;
-        
-    }
-
-    .hjertebtn i{
-        font-size: 18px;
-   
-    }
-
-    /*section 3*//* 
-    #section3{
-        text-align: center;
-        text-decoration: white solid caption;
-    }
-    #c1{
-        background-image: url(Bilder/21-3008x2008.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    #c2{ 
-        background-image: url(Bilder/248-3872x2592.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    #c3{ 
-        background-image: url(Bilder/60-1920x1200.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    #c4{ 
-        background-image: url(Bilder/157-5000x3914.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    #c5{ 
-        background-image: url(Bilder/96-4752x3168.jpg);
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-     */
-
-    
-    
-
-
-
-
-
-    /*Main slutt*/
-
-/*/*
-@media only screen and (max-width: 411px){} = Lik eller mindre (MINDRE enn)
-
-@media only screen and (max-width: 411px) and (min-width: 1893px) {}  ALT SOM ER MELLOM 411 og 1893 blir skrevet ut
-
-
-/*Start på Media Queries for Tablet *//*
-@media only screen and (max-width: 411px) and (min-width: 1893px) {
-
-}
-/*
-/*Start på Media Queries for Tablet *//*
-@media only screen and (min-width: 900px){
-
-}
-
-*/
-/*Start på Media Queries for PC*//*
-
-@media only screen and (min-width: 413px){
-/*
-    header {
+        top: 42px;
+    }    
+    #sectionButtons{
         display: flex;
+        justify-content: center;
         flex-direction: row;
-        align-items: center;
-        padding: 10px;
+        border-color: black; 
+        width: 100%; 
+        position: relative;
+        top: 20px;  
+    }
+    #section2 p{
+        position: relative;
+        top: 13px;
+    } 
+    
+
+    #sectionButtons li a{
+        margin: 1px;
+        width: 100%;
+        position: relative;
+        border: 1px solid black;
+        padding-left: 20px;
     }
 
-    /*søkebar*//*
-    header form {
-        display: flex;
-        align-items: center;
-    }
-    header nav {
+    #sectionButtons li{
         display: flex;
         justify-content: space-between;
+        width: 109px;
+        position: relative;
+        height: auto;
+    }
+    main #section2{
+        gap: 35px;
+    }
+    main #section2 h3, p{
+        margin: 0;
+        padding: 0;
+    }
+
+    main #section2 article img{
+        display: flex;
+        max-height: 400px;
+        max-width: 113%;
+        margin: -9px;
+    }
+    
+    main #section2 article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        top: 32px;
+        gap: 16px;
+    }
+    main #section2 article ul li{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+    }
+    main #section2 article ul li a{
+        padding: 0;
+    }
+    main #section2 article ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        left: -11px;
+        gap: 13px;
+    }
+
+    /*Section 2 slutt*/
+    /*Section 3 start*/
+    #section3{
+       display: flex;
+       position: relative; 
+       flex-direction: column;
+       top: 110px;
+       gap: 10px;
+    }
+    #section3 header h4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        right: 6px;
+        top: -7px;
+    } 
+
+    #section3 article{
+        display: flex;
+        height: 200px;
+        border: 1px solid black;
+        justify-content: center;
+        position: relative;
         width: 100%;
     }
-
-    header nav ul {
+    #section3 article h5{
         display: flex;
-        gap: 5px;
+        position: relative;
+        align-self: center;
+        
     }
-*//*
-    .searchfelt {
+
+    /*Section 3 slutt*/
+    /*Section 4 Start*/
+    #section4{
+        position: relative;
+        top: 104px;
         display: flex;
-        flex-direction: row;
-        border-radius: 20px;
-        padding: 10px;
-        border: 2px solid #000;
+        flex-direction: column;
+        padding: 0;
+        gap: 16px;
+    }
+
+    #section4 article{
+        border: 1px solid #0000000f;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 16px;
+        margin: 5px; 
+        gap: 15px;   
+    }
+
+    #section4 article img{
+        max-width: 150px;
+        padding: 0;
+    }
+
+    #section4 header{
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        right: 20px;
+        margin: 24px;
+        top: 26px;
+
+    }
+    h6{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 1px;
+    }
+
+    /*Section 4 slutt*/
+    /*Footer start*/
+    footer{
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    footer section ul, li, i{
+        padding: 0;
+    }
+
+    footer section{
+        gap: 21px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer section ul{
+        gap: 9px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer section a, h4{
+        padding: 0;
+        width: fit-content;
+    }
+    #sectionFooter1 h5{
+        padding: 0;
         margin: 0;
-        width: 300px;
-        background-color: transparent;
-        color: inherit;
+        
+    }
+    footer section a, h5{
+        padding: 0;
     }
 
-    #søkeIkon {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        left: 294px;
-    }
-
-    /*slutt på søkebar*/
-/*
-    #venstreForLogo {
-        display: flex;
-        flex-direction: row;
-    }
-
-    h1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .høyreForLogo {
-        display: flex;
-        flex-direction: row;
-    }
-}
-*/
-/*Slutt på Media Queries for PC*/
 
 
 
 
 
+    /*Footer slutt*/
 
 
 
-
-
-/*Product sides Innhold*/
-
-
-/*Brødsmule sti*/
-
-/*Hovedområde*/
-
-/*sideopmråde*/
-
-/*4 produkt kort samme som på index de mest populære*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+   
