@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Hoved side</title>
 </head>
-<body>
-    <div class="flex-container">
+<body class="flex-container">
+    <div>
+       
     <header id="global-header">
+         <nav>
             <form>
                     <input type="search" placeholder="søk her " class="searchfelt">
                     <button><i class="fa-solid fa-search"></i></button>
             </form>
-            <nav>
+            
                 <ul class="venstreForLogo">
                     <li class="midt"><a href="index.html">Hjem</a></li>
                     <li class="midt"><a href="#section2">Produkter</a></li>
@@ -43,10 +45,10 @@
                         <h2>Etiam id facilisis neque. Morbi sodales luctus euismod.</h2>
                     <p>Pellentesque posuere mi a orci ullamcorper accumsan. Aenean aliquam mollis dolor. Pellentesque placerat ultricies nisi.</p>
                     <a href="#">Få en prøve pakke i dag</a>
-                </section>
+                    </section>
             </div>
-
             <section id="section2">
+                <section id="overSectionButtons">
                     <h3>Våre mest populære produkter</h3>
                 <p>Oppdag det beste av det beste</p>
                 <ul id="sectionButtons">
@@ -54,48 +56,51 @@
                     <li><a href="#">Special Price</a></li>
                     <li><a href="#">Best Sellers</a></li>
                 </ul>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li ><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
-                <article class="populareProduktKort">
-                    <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
-                    <ul>
-                        <li><a href="product.html" class="marker">Product name</a></li>
-                        <li>Kr 1999</li>
-                    </ul>
-                </article>
+                </section>
+                <section id="prodKort">
+                    <article class="populareProduktKort">
+                        <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                        <ul>
+                            <li ><a href="product.html" class="marker">Product name</a></li>
+                            <li><p>Kr 1999</p></li>
+                        </ul>
+                    </article>
+                        <article class="populareProduktKort">
+                            <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                            <ul>
+                                <li><a href="product.html" class="marker">Product name</a></li>
+                                <li><p>Kr 1999</p></li>
+                            </ul>
+                        </article>
+                        <article class="populareProduktKort">
+                            <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                            <ul>
+                                <li><a href="product.html" class="marker">Product name</a></li>
+                                <li><p>Kr 1999</p></li>
+                            </ul>
+                        </article>
+                        <article class="populareProduktKort">
+                            <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                            <ul>
+                                <li><a href="product.html" class="marker">Product name</a></li>
+                                <li><p>Kr 1999</p></li>
+                            </ul>
+                        </article>
+                        <article class="populareProduktKort">
+                            <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                            <ul>
+                                <li><a href="product.html" class="marker">Product name</a></li>
+                                <li><p>Kr 1999</p></li>
+                            </ul>
+                        </article>
+                        <article class="populareProduktKort">
+                            <img src="Bilder/ryggsekk.jpg" alt="Bilde av et Produkt">
+                            <ul>
+                                <li><a href="product.html" class="marker">Product name</a></li>
+                                <li><p>Kr 1999</p></li>
+                            </ul>
+                        </article>
+                </section>
             </section>
 
 
@@ -153,12 +158,14 @@
     </article>
 </section>
         </main>
+
         <footer id="footerKontaktOss">
         <!---Husk nå at jag har tatt h4 her,,,,,Må endres senere kanskje-->
         <section>
             <a href="index.html"><h4>Logo</h4></a> 
             <p id="textBunn">Mauris ultrices fringilla arcu, a lacinia est fringilla sit amet. Etiam lacinia laoreet enim, eget luctus eros efficitur auctor.</p>
         </section>
+        <section id="footer-flex">
             <section id="sectionFooter1">
                     <h5>Kontakt</h5>
                     <ul>
@@ -168,7 +175,7 @@
                         <li class="liSectionFooter1"><a href="#"><i class="fa-solid fa-clock"></i> Åpningstider:</a> Stenger 15:00</li>
                     </ul>
             </section>
-                <section class="sectionFooter2">
+                <section id="sectionFooter2">
                     <h5>Snarveier</h5>
                     <ul>
                         <li><a href="#">Produkter</a></li>
@@ -185,7 +192,7 @@
                         <li><a href="https://no.pinterest.com/login/"><i class="fa-brands fa-pinterest"></i></a></li>
                     </ul>
                 </section>
-            
+            </section>
         </footer>
     </div>
 </body>
