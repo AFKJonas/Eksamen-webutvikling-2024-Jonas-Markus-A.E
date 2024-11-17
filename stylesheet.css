@@ -363,7 +363,7 @@
     /*MediaQueries Desktop*/
     /*ALT SOM ER STØRRE ENN 588 blir skrevet ut*/
     @media only screen and (min-width: 602px) {
-        /* Header */
+        /*Header*/
         .flex-container div{
             max-width: 100%;
         }
@@ -476,8 +476,8 @@
 
 
 
-       /* main */
-       /* Våre mest populære produkter */
+       /*main */
+       /*Våre mest populære produkter*/
        
        #overSectionButtons{
         display: flex;
@@ -504,9 +504,17 @@
         grid-template-rows:repeat(2,1fr) ;
        }
        
+    /*Våre mest populære kategorier*/
+    #kategoriGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 100%;
+    }
 
        
-
+    /*Andmeldelser*/
         #section4 {
             position: relative;
             top: 104px;
