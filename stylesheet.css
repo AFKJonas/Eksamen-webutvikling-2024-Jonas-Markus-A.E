@@ -370,7 +370,7 @@
         .flex-container{
             display: flex;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
             margin: 0 auto;
             padding: 0; 
             max-width: 1200px; 
@@ -504,14 +504,140 @@
         grid-template-rows:repeat(2,1fr) ;
        }
        
+
+
+
     /*Våre mest populære kategorier*/
-    #kategoriGrid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
-        max-width: 100%;
+    /*Section 3 med flex*/
+  
+    .c1-5 {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        width: 100%;
     }
+       #cKort{
+        display: grid;
+        grid-template-columns: repeat(3, 386px);
+        grid-template-rows: auto auto;
+       }
+       #cKort section article{
+        display: grid;
+        border: none;
+       }
+
+    #c1{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url("Bilder/sko.jpg");
+    }
+    
+    #c2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("Bilder/kaktus.jpg");
+    }
+    #c3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url("Bilder/tastatur.jpg");
+    }
+    #c4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("Bilder/skateboard.jpg");
+    }
+    #c5{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("Bilder/ps3.jpg");
+    }
+    
+    
+  
+
+
+
+
+    /* #section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        max-width: 1200px;
+        padding: 0;
+        margin: 0;
+    }
+    #section3 article{
+        border: none;
+    }
+    
+    #cKort section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .c1-5{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+        #c1{
+            background-image: url("Bilder/sko.jpg");
+            width: 100%;
+            max-width: 386px;
+        }
+        #c2{
+            background-image: url("Bilder/kaktus.jpg");
+            width: 100%;
+            max-width: 386px;
+        }
+        #c3{
+            background-image: url("Bilder/tastatur.jpg");
+            width: 100%;
+            max-width: 386px;
+        }
+        #c4{
+            background-image: url("Bilder/skateboard.jpg");
+            width: 100%;
+            max-width: 864px;
+        }
+        #c5{
+            background-image: url("Bilder/ps3.jpg");
+            width: 100%;
+            max-width: 300px;
+        } */
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
        
     /*Andmeldelser*/
@@ -521,9 +647,6 @@
             display: flex;
             flex-direction: row;
         } 
-
-
-
         #section4 header{
             display: flex;
             flex-direction: column;
@@ -531,13 +654,38 @@
         #section4 article{
             max-width: 289px;
         } 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }   
 
 
 /*
 body header form button i{
     width: 100%;
-}
+} 
+    
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+
 header nav{
     display: flex;
     justify-content: flex-start;
