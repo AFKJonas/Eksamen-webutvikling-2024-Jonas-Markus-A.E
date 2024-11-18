@@ -9,36 +9,33 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Product-side</title>
 </head>
-<body>
+<body class="flex-container">
     <div id="grid-container">
         <header id="global-header">
-            <form>
-                    <input type="search" placeholder="søk her " class="searchfelt">
-                    <button><i class="fa-solid fa-search"></i></button>
-            </form>
             <nav>
-                <ul id="venstreForLogo">
-                    <li class="midt"><a href="index.html">Hjem</a></li>
-                </ul>
-                <ul>
-                    <li class="midt"><a href="#section2">Produkter</a></li>
-                </ul>
-                <a href="index.html" class="logo"><h1 >Logo</h1></a>
-                <ul id="hoyreForLogo">
-                    <li class="midt"><a href="#section3">Kategorier</a></li>
-                </ul>
-                <ul>
-                    <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
-                </ul>    
-                <ul id="heltHoyre">
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <nav id="breadCrumbs">
+               <form>
+                       <input type="search" placeholder="søk her " class="searchfelt">
+                       <button><i class="fa-solid fa-search"></i></button>
+               </form>
+               
+                   <ul class="venstreForLogo">
+                       <li class="midt"><a href="index.html">Hjem</a></li>
+                       <li class="midt"><a href="#section2">Produkter</a></li>
+                   </ul>
+   
+                   <a href="index.html" class="logo"><h1>Logo</h1></a>
+   
+                   <ul class="hoyreForLogo">
+                       <li class="midt"><a href="#section3">Kategorier</a></li>
+                       <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
+                   </ul> 
+   
+                   <ul id="heltHoyre">
+                       <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                       <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                       <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                   </ul>
+                   <nav id="breadCrumbs">
                 <p>
                     <a href="index.html">Hjem</a>
                     <i class="fa-solid fa-greater-than"></i>
@@ -47,27 +44,30 @@
                     <a href="product.html">Produktnavn</a>
                 </p>
                 </nav>
-            <section >
-                <header>
-                    <h2 class="hidden">Produkt</h2>
-                </header>
+               </nav>
+               
+           </header>
+        <main>
+
+            <section id="produktKort">
                 <article class="produktBilde">
-                    <h2 class="hidden">produktBilde</h2>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av hvit t-sjorte">
+                    <!-- Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Pixabay</a> -->
                 </article>
                 <article class="produktBilde">
-                    <h2 class="hidden">produktBilde</h2>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av hvit t-sjorte">
+                     <!-- Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Pixabay</a> -->
                 </article>
                 <article class="produktBilde">
-                    <h2 class="hidden">produktBilde</h2>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av hvit t-sjorte">
+                     <!-- Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Pixabay</a> -->
                 </article>
                 <article class="produktBilde">
-                    <h2 class="hidden">produktBilde</h2>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av hvit t-sjorte">
+                     <!-- Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726721">Pixabay</a> -->
                 </article>
             </section>
+
             <aside>
                 <h2>Produktnavn</h2>
                     <p>Merkenavn (Link her)</p>
@@ -75,25 +75,66 @@
                     <p>Farge: beige</p>
             </aside>
 
-<!---lignende produkter-->
-<article class="populareProduktKort">
-    <h6 class="hidden">Product name</h6>
-    <img src="https://picsum.photos/200/200" alt="et Bilde av våre mest populære produkter">
-    <button class="hjerteBtn"><i class="fa-regular fa-heart"></i></button>
-    <ul>
-        <li ><a href="product.html" class="marker">Product name</a></li>
-        <li>Kr 1999</li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-regular fa-star"></i></li>
-        <li>842 Reviews</li>
-    </ul>
-
-</article>
-        </main>
-        <footer id="footerKontaktOss">
+<!---lignende produkter-->    
+<section id="section2">
+    <section>
+        <h2>Lignende produkter</h2>
+    </section>
+    <section>
+        <section id="prodKort">
+            <article class="lignendeProduktKort">
+                <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                <ul class="lignendeProductList">
+                    <li ><a href="product.html" class="marker">Product name</a></li>
+                    <li><p>Kr 1999</p></li>
+                </ul>
+            </article>
+                <article class="lignendeProduktKort">
+                    <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                    <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                    <ul class="lignendeProductList">
+                        <li><a href="product.html" class="marker">Product name</a></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
+                </article>
+                <article class="lignendeProduktKort">
+                    <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                    <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                    <ul class="lignendeProductList">
+                        <li><a href="product.html" class="marker">Product name</a></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
+                </article>
+                <article class="lignendeProduktKort">
+                    <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                    <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                    <ul class="lignendeProductList">
+                        <li><a href="product.html" class="marker">Product name</a></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
+                </article>
+                <article class="lignendeProduktKort">
+                    <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                    <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                    <ul class="lignendeProductList">
+                        <li><a href="product.html" class="marker">Product name</a></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
+                </article>
+                <article class="lignendeProduktKort">
+                    <img src="Bilder/neonT.shirt.jpg" alt="Bilde av lignende produkter">
+                    <!-- Img by: Image by <a href="https://pixabay.com/users/popmelon-15508150/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Amore Seymour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8726714">Pixabay</a> -->
+                    <ul class="lignendeProductList">
+                        <li><a href="product.html" class="marker">Product name</a></li>
+                        <li><p>Kr 1999</p></li>
+                    </ul>
+                </article>
+        </section>
+    </section>
+</section>
+</main>
+<footer id="footerKontaktOss">
             <!---Husk nå at jag har tatt h4 her,,,,,Må endres senere kanskje-->
             <section>
                 <a href="index.html"><h4>Logo</h4></a> 

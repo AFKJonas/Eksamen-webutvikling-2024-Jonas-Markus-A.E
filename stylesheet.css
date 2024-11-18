@@ -216,7 +216,7 @@
         top: 32px;
         gap: 16px;
     }
-    main #section2 article ul li{
+    .prodKortList{
         display: flex;
         justify-content: flex-start;
         position: relative;
@@ -568,62 +568,7 @@
     
   
 
-
-
-
-    /* #section3{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px;
-        max-width: 1200px;
-        padding: 0;
-        margin: 0;
-    }
-    #section3 article{
-        border: none;
-    }
-    
-    #cKort section{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .c1-5{
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border: none;
-    }
-
-        #c1{
-            background-image: url("Bilder/sko.jpg");
-            width: 100%;
-            max-width: 386px;
-        }
-        #c2{
-            background-image: url("Bilder/kaktus.jpg");
-            width: 100%;
-            max-width: 386px;
-        }
-        #c3{
-            background-image: url("Bilder/tastatur.jpg");
-            width: 100%;
-            max-width: 386px;
-        }
-        #c4{
-            background-image: url("Bilder/skateboard.jpg");
-            width: 100%;
-            max-width: 864px;
-        }
-        #c5{
-            background-image: url("Bilder/ps3.jpg");
-            width: 100%;
-            max-width: 300px;
-        } */
-
-
+}
    
 
 
@@ -659,111 +604,58 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-}   
-
-
-/*
-body header form button i{
-    width: 100%;
-} 
-    
-display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-
-
-header nav{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column; 
-    gap: 15px;
-}
-
-header nav ul, li, a{
-    padding: 0;
-    margin: 0;
-    padding: 0;
-    width: 87px;
-}
-
-.logo{
-    width: 60px;
-}
-
-h1{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    width: 100%;
-}
-
-#heltHoyre{
-    gap: 13px;
-    display: flex;
-    flex-direction: column;
-}
-/*Start på Media Queries for Tablet *//*
-@media only screen and (max-width: 411px) and (min-width: 1893px) {
-
-}
-/*
-/*Start på Media Queries for Tablet *//*
-@media only screen and (min-width: 900px){
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*Product.html*/
 
     #breadCrumbs{
         display: flex;
-        justify-content: flex-start;
-    }
-    #breadCrumbs p, a{
+        padding: 0;
         
-    }  
+    }
+    #breadCrumbs p{
+        display: flex;
+        gap: 5%;
+    } 
+     
+    /*Produkt bilder*/
+   #produktKort{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+   }
+   .produktBilde{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+   }
+
+   /*Aside*/
+   aside{
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+   }
     
+/*lignende produkter*/
    
+    .lignendeProductList li{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
