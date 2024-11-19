@@ -148,7 +148,6 @@
     /*Section 2 start*/
     #section2{
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
         position: relative;
         top: 42px;
@@ -215,8 +214,9 @@
         position: relative;
         top: 32px;
         gap: 16px;
+        max-width: 350px;
     }
-    .prodKortList{
+    main #section2 article ul li{
         display: flex;
         justify-content: flex-start;
         position: relative;
@@ -351,7 +351,7 @@
     }
 
     .liSectionFooter1{
-        width: 235px;
+        width: 282px;
     }
 
     footer section a, h5{
@@ -493,15 +493,13 @@
         
        
        .populareProduktKort{
-        max-width: 100%;
         margin-right: 1rem;
-        margin-left: 1rem;
-        max-width: 350px; 
+        margin-left: 1rem; 
        }
        #prodKort{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:repeat(2,1fr) ;
+        grid-template-rows:repeat(3, 1fr) ;
        }
        
 
@@ -515,17 +513,29 @@
         background-position: center;
         background-repeat: no-repeat;
         border: none;
-        width: 100%;
     }
        #cKort{
         display: grid;
-        grid-template-columns: repeat(3, 386px);
+        grid-template-columns: repeat( 3, 386px);
         grid-template-rows: auto auto;
+        padding: 0;
+        margin: 0;
+        gap: 2px;
        }
        #cKort section article{
         display: grid;
         border: none;
        }
+
+    #c1, #c2, #c3{
+        max-width: 386px;
+}
+#c4{
+        max-width: 864px;
+       }
+    #c5{
+        max-width: 300px;
+    } 
 
     #c1{
         display: grid;
@@ -537,10 +547,10 @@
     }
     
     #c2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
         background-image: url("Bilder/kaktus.jpg");
     }
     #c3{
@@ -552,22 +562,107 @@
     }
     #c4{
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
         background-image: url("Bilder/skateboard.jpg");
     }
     #c5{
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
         background-image: url("Bilder/ps3.jpg");
     }
     
+       
+    /*Andmeldelser*/
+    #section4 {
+        position: relative;
+        top: 104px;
+        display: flex;
+        flex-direction: column;
+    } 
+    #section4 header{
+        display: flex;
+        flex-direction: column;
+    }
+    #section4 article{
+        max-width: 289px;
+        margin: 0;
+        padding: 13px;
+    } 
+    #anmeldelserKort{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+    h5{
+        font-size: x-large;
+    }
     
-  
 
+
+        /*Ny Side!*/
+     /*Product.html*/
+    #flex-container{
+        display: flex;
+        flex-direction: inherit;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    #produktKort section{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        width: 50%;
+        
+    }
+    #tshirt1{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        max-width: 480px;
+
+    }
+    .produktBilde{
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #tshirt2, #tshirt3, #tshirt4{
+        display: flex;
+        max-width: 160px;
+    }
+    .lignendeProduktKort{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    /*Aside*/
+    aside{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        flex-wrap: nowrap;
+    }
+
+
+
+
+
+
+
+
+
+
+     /*Media queries slutt*/
 }
    
 
@@ -581,34 +676,12 @@
 
 
 
-
-
-
-       
-    /*Andmeldelser*/
-        #section4 {
-            position: relative;
-            top: 104px;
-            display: flex;
-            flex-direction: row;
-        } 
-        #section4 header{
-            display: flex;
-            flex-direction: column;
-        }
-        #section4 article{
-            max-width: 289px;
-        } 
-        
-
-
-
+    
 
     /*Product.html*/
 
     #breadCrumbs{
         display: flex;
-        padding: 0;
         
     }
     #breadCrumbs p{
@@ -623,12 +696,20 @@
     padding: 0;
     margin: 0;
    }
-   .produktBilde{
+   #produktKort section
+   main #produktKort article{
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
    }
+    
+    main #section2 h2{
+        margin: 0;
+        padding: 0;
+    }
+
+
 
    /*Aside*/
    aside{
@@ -638,16 +719,10 @@
    }
     
 /*lignende produkter*/
-   
-    .lignendeProductList li{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: space-between;
-    }
+    
 
 
-
+ 
 
 
 
