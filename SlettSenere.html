@@ -1520,37 +1520,206 @@ display: flex;
 
 
 
-  <section id="section3">
+  <section id="section4">
     <section>
         <header>
-            <h4>Våre mest populære kategorier</h4>
+            <h5>Våre mest populære kategorier</h5>
         </header>
-        <p>Oppdag det beste av det beste</p>
     </section> 
-            <section id="cKort">
-                <article id="c1" class="c1-5">
+            <section anmeldelserKort>
+                <article>
                     <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
                     <h6>Anonymous kunde</h6>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
-                    </article>
-            <article id="c2" class="c1-5">
-                <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
-                <h6>Anonymous kunde</h6>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
-        </article>
-            <article id="c3" class="c1-5">
-                <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
-                <h6>Anonymous kunde</h6>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
-        </article >
-            <article id="c4" class="c1-5">
-                <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
-                <h6>Anonymous kunde</h6>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
-        </article>
-    </section>
- </section>
+                </article>
+                <article id="c2" class="c1-5">
+                    <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+                    <h6>Anonymous kunde</h6>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+                </article>
+                <article id="c3" class="c1-5">
+                    <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+                    <h6>Anonymous kunde</h6>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+                </article >
+                <article id="c4" class="c1-5">
+                    <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+                    <h6>Anonymous kunde</h6>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+                </article>
+            </section>
+        </section>
+---------------------------------------
+#section4{
+    position: relative;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 16px;
+}
 
+#section4 article{
+    border: 1px solid #0000000f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    margin: 5px; 
+    gap: 15px;   
+}
+
+#section4 article img{
+    max-width: 150px;
+    padding: 0;
+}
+
+#section4 header{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 20px;
+    margin: 24px;
+    top: 26px;
+
+}
+h6{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 1px;
+}
+
+---------------------------------------
+#section4{
+    display: flex;
+    position: relative; 
+    flex-direction: column;
+    top: 110px;
+    gap: 10px;
+ }
+ #section4 header h5{
+     padding: 0;
+     margin: 0;
+     position: relative;
+     right: 6px;
+     top: -7px;
+ } 
+
+ #section4 article{
+     display: flex;
+     height: 200px;
+     border: 1px solid black;
+     justify-content: center;
+     position: relative;
+     width: 100%;
+ }
+ #section4 article h5{
+     display: flex;
+     position: relative;
+     align-self: center;
+     
+ }
+
+--------------------------------------------
+/*Section 4 Start*/
+#section4{
+    position: relative;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 16px;
+}
+
+#section4 article{
+    border: 1px solid #0000000f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    margin: 5px; 
+    gap: 15px;   
+}
+
+#section4 article img{
+    max-width: 150px;
+    padding: 0;
+}
+
+#section4 header{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 20px;
+    margin: 24px;
+    top: 26px;
+
+}
+h6{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 1px;
+}
+--------------------------------------------
+/*Section 4 Start*/
+MEDIA Queries'
+#section4 {
+    position: relative;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+} 
+#section4 header{
+    display: flex;
+    flex-direction: column;
+}
+#section4 article{
+    max-width: 289px;
+    margin: 0;
+    padding: 13px;
+} 
+#anmeldelserKort{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+h5{
+    font-size: x-large;
+}
+
+--------------------------------------------
+
+<section id="section4">
+    <header>
+        <h5>Anmeldelser</h5>
+    </header>
+    <section id="anmeldelserKort">
+        <article>
+                <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+                <h6>Anonymous kunde</h6>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+        </article>
+        <article>
+            <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+            <h6>Anonymous kunde</h6>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+    </article>
+    <article>
+        <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+        <h6>Anonymous kunde</h6>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+</article>
+<article>
+    <img src="https://picsum.photos/150/100" alt="Profilbilde til en av brukerene våre">
+    <h6>Anonymous kunde</h6>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non eros eu dui vehicula suscipit. Morbi consectetur est eu condimentum vestibulum. Ut eleifend, diam sed semper gravida, ex felis rhoncus nibh, dignissim aliquam augue ante id tortor.</p>
+</article>
+</section>
+</section>
 
 
 
