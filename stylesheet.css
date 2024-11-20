@@ -30,7 +30,7 @@
         background-color: white;
         border: 1px solid black;
     }
-    button{
+    #sokeKnapp{
         display: flex;
         padding: 6px;
         border-radius: 1px;
@@ -42,7 +42,7 @@
         justify-content: center;
     }
 
-    body header form button i{
+    body header form #sokeKnapp i{
         width: 100%;
     }
     header nav{
@@ -186,6 +186,13 @@
         position: relative;
         height: auto;
     }
+
+    #container{
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
     .marker{
         width: 60px;
     }
@@ -212,8 +219,6 @@
         position: relative;
         top: 32px;
         gap: 16px;
-        max-width: 350px;
-        width: 100%;
     }
     main #section2 article ul li{
         display: flex;
@@ -368,7 +373,6 @@
         .flex-container{
             display: flex;
             justify-content: center;
-            /* align-items: center; */
             margin: 0 auto;
             padding: 0; 
             max-width: 1200px; 
@@ -438,7 +442,7 @@
 
         /*Header slutt*/
 
-        /*section start*/
+        /*section 1 start*/
          #section1 section{
             max-width: 50%;
         }
@@ -489,14 +493,16 @@
        
        .populareProduktKort{
         margin-right: 1rem;
-        margin-left: 1rem; 
+        margin-left: 1rem;
+        width: 350px; 
+        
        }
        #prodKort{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:repeat(3, 1fr) ;
+        grid-template-rows:repeat(3, 1fr);
        }
-       /*Section 2 start slutt*/
+       /*Section 2 slutt*/
        
 
 
@@ -624,6 +630,12 @@
         margin: 0;
     }
 
+    main section section section{
+        padding: 0;
+        margin: 0;
+        max-width: 700px;
+    }
+
     #produkterPaRekke{
         display: flex;
         flex-direction: row;
@@ -659,7 +671,7 @@
 
 
 
-    /*Product.html*/
+    /*Product.html Start*/
 
     #breadCrumbs{
         display: flex;
@@ -670,16 +682,27 @@
         gap: 5%;
     } 
     /*Produkt bilder*/
+    #bildeKlasseProdukt{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     #produktKort{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-   #produktKort section article img{
+   #produktKort section article{
     display: flex;
     flex-direction: column;
     max-width: 113%;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+   }
+   #produkterPaRekke{
+    padding: 0;
+    margin: 0;
    }
 
    /*lignende produkter*/ 
@@ -696,20 +719,63 @@
     display: flex;
     flex-direction: column;
    }
-    
+    /*Product.html Slutt*/
 
-    
+    /*Checkout.html Start*/
+   #shoppingBagbox{
+    width: 100%;
+   }
+   #shoppingBagbox article img{
+    width: 100%;
+   }
+   
+   #dineOpplysniger{
+    display: flex;
+    flex-direction: column;
+   }
+   #dineOpplysniger form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+   }
+
+   .Opplysninger{
+    padding: 10px;
+   }
+
+   #opplyningsKnapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 47px;
+    margin: 0;
+    padding-bottom: 22px;
+    gap: 28px;
+   }
+   #opplyningsKnapper a{
+    padding: 0;
+   }
+
+   #lagre{
+    width: fit-content;
+    padding: 10px;
+    background-color: #4c4c4c;
+    color: aliceblue;
+   }
+   #avbryt{
+    right: -3px;
+    position: relative;
+    margin: 14px;
+    text-decoration-line: underline;
+    color: blue;
+   }
 
 
- 
 
 
 
 
 
 
-
-
-
-
+    /*Checkout.html Slutt*/
 

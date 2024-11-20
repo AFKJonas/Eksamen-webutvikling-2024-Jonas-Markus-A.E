@@ -7,91 +7,76 @@
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Product-side</title>
+    <title>checkout</title>
 </head>
 <body class="flex-container">
     <div id="grid-container">
         <header id="global-header">
             <nav>
                <form>
-                       <input type="search" placeholder="søk her " class="searchfelt">
-                       <button><i class="fa-solid fa-search"></i></button>
-               </form>
-                   <ul class="venstreForLogo">
-                       <li class="midt"><a href="index.html">Hjem</a></li>
-                       <li class="midt"><a href="#section2">Produkter</a></li>
-                   </ul>
-   
-                   <a href="index.html" class="logo"><h1>Logo</h1></a>
-   
-                   <ul class="hoyreForLogo">
-                       <li class="midt"><a href="#section3">Kategorier</a></li>
-                       <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
-                   </ul> 
-                   <ul id="heltHoyre">
-                       <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                       <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                       <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                   </ul>
-                   <nav id="breadCrumbs">
-                <p>
-                    <a href="index.html">Hjem</a>
-                    <i class="fa-solid fa-greater-than"></i>
-                    <a href="index.html#section3">Kategori</a>
-                    <i class="fa-solid fa-greater-than"></i>
-                    <a href="product.html">Produktnavn</a>
-                </p>
-                </nav>
-               </nav>
-           </header>
+                <input type="search" placeholder="søk her" class="searchfelt">
+                <button id="sokeKnapp"><i class="fa-solid fa-search"></i></button>
+            </form>
+            <ul class="venstreForLogo">
+                <li class="midt"><a href="index.html">Hjem</a></li>
+                <li class="midt"><a href="#section2">Produkter</a></li>
+            </ul>
+            <a href="index.html" class="logo"><h1>Logo</h1></a>
+            <ul class="hoyreForLogo">
+                <li class="midt"><a href="#section3">Kategorier</a></li>
+                <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
+            </ul>
+            <ul id="heltHoyre">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </header>
         <main>
+            <header>
+                <h1>Kasse</h1>
+            </header>
             <section id="shoppingBagbox">
                 <header>
                     <h2>1. Shoppingbagen din</h2>
                 </header>
                 <article>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
                 </article>
                 <article>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
                 </article>
                 <article>
-                    <img src="Bilder/157-5000x3914.jp" alt="Bilde av produkt">
+                    <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
                 </article>
             </section>
-            <section>
+            <section id="dineOpplysniger">
                 <header>
                     <h2>2. Dine Opplysninger</h2>
                 </header>
                 <form>
-                    <label>Leveringsadresse Fornavn</label>
-                    <input name="navn" placeholder="Nora*" id="navn" >
-                    <label>Etternavn</label>
-                    <input name="etternavn" placeholder="Nordmann*" id="etternavn">
-                    <label>Gate adresse</label>
-                    <input name="gateAdresse" placeholder="BRA veien 4*" id="gateAdresse">
-                    <label>Postnummer</label>
-                    <input type="number" placeholder="1752*" id="postnummer">
-                    <label>Poststed</label>
-                    <input name="poststed" placeholder="Halden*" id="poststed">
-                    <label>Kontaktinformasjon E-post</label>
-                    <input name="epost" placeholder="Noranordman@hiof.no..." id="epost">
-                    <label>Telefon</label>
-                    <input name="telefon" placeholder="+4749***018" id="telefon">
+                    <label>Leveringsadresse</label>
+                    <input name="navn" placeholder="Fornavn*" class="Opplysninger">
+                    <input name="etternavn" placeholder="Etternavn*" class="Opplysninger">
+                    <input name="gateAdresse" placeholder="Gateadresse*" class="Opplysninger">
+                    <input type="number" placeholder="Postnummer*" class="Opplysninger">
+                    <input name="poststed" placeholder="Postnummer*" class="Opplysninger">
                 </form>
-                <button>Largre</button>
-                <button>Avbryt</button>
-              </section>
-              <section>
+            </section>
+            <section id="opplyningsKnapper">
+                <button id="lagre">Lagre</button>
+                <a id="avbryt" href="#">Avbryt</a>
+            </section>
+                <section>
                 <header>
                     <h2>3. Levering</h2>
                 </header>
@@ -100,8 +85,8 @@
                         <h4>Ekspress Hjemlevering</h4>
                         <label>
                             <input type="radio" name="fraktType" value="ekspressHjemlevering">
-                            Ekspress Hjemlevering
-                            3-4 Virkedager
+                            <p>Ekspress Hjemlevering</p>
+                            <p>3-4 Virkedager</p>
                         </label>
                     </article>
                 </fieldset>
@@ -120,8 +105,8 @@
                         <h4>Standard Hjemlevering</h4>
                         <label>
                             <input type="radio" name="fraktType" value="standardhjemlevering">
-                            Standard Hjemlevering
-                            5-8 Virkedager
+                            <p>Standard Hjemlevering</p>
+                            <p>5-8 Virkedager</p>
                         </label>
                     </article>
                 </fieldset>
