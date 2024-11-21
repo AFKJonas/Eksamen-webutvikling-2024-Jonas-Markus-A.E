@@ -10,7 +10,6 @@
     <title>checkout</title>
 </head>
 <body class="flex-container">
-    <div id="grid-container">
         <header id="global-header">
             <nav>
                <form>
@@ -19,11 +18,11 @@
             </form>
             <ul class="venstreForLogo">
                 <li class="midt"><a href="index.html">Hjem</a></li>
-                <li class="midt"><a href="#section2">Produkter</a></li>
+                <li class="midt"><a href="index.html#section2">Produkter</a></li>
             </ul>
             <a href="index.html" class="logo"><h1>Logo</h1></a>
             <ul class="hoyreForLogo">
-                <li class="midt"><a href="#section3">Kategorier</a></li>
+                <li class="midt"><a href="index.html#section3">Kategorier</a></li>
                 <li class="midt"><a href="#footerKontaktOss">Kontakt oss</a></li>
             </ul>
             <ul id="heltHoyre">
@@ -31,39 +30,46 @@
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-        </header>
-        <main>
+        </nav>
+    </header>
+        <main id="checkoutMainInnhold">
             <header>
-                <h1>Kasse</h1>
+                <h2>Kasse</h2>
             </header>
             <section id="shoppingBagbox">
                 <header>
                     <h2>1. Shoppingbagen din</h2>
                 </header>
-                <article>
+                <article class="checkoutArticleProduktKort">
+                    <a href="product.html">
                     <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
+                </a>
                 </article>
-                <article>
+                <article class="checkoutArticleProduktKort">
+                    <a href="product.html">
                     <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
+                </a>
                 </article>
-                <article>
+                <article class="checkoutArticleProduktKort">
+                    <a href="product.html">
                     <img src="Bilder/tshirt.jpg" alt="Bilde av produkt">
                     <h3>Produkt name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
+                </a>
                 </article>
             </section>
             <section id="dineOpplysniger">
                 <header>
                     <h2>2. Dine Opplysninger</h2>
                 </header>
-                <form>
+                <form class="vannRett">
                     <label>Leveringsadresse</label>
                     <input name="navn" placeholder="Fornavn*" class="Opplysninger">
                     <input name="etternavn" placeholder="Etternavn*" class="Opplysninger">
@@ -71,72 +77,57 @@
                     <input type="number" placeholder="Postnummer*" class="Opplysninger">
                     <input name="poststed" placeholder="Postnummer*" class="Opplysninger">
                 </form>
-            </section>
-            <section id="opplyningsKnapper">
+            </section> 
+            <section id="opplyningsKnapper" class="loddRett">
                 <button id="lagre">Lagre</button>
                 <a id="avbryt" href="#">Avbryt</a>
             </section>
-                <section>
+            <section id="leveringsAlternativer">
                 <header>
                     <h2>3. Levering</h2>
                 </header>
-                <fieldset>
-                    <article>
-                        <h4>Ekspress Hjemlevering</h4>
-                        <label>
-                            <input type="radio" name="fraktType" value="ekspressHjemlevering">
-                            <p>Ekspress Hjemlevering</p>
-                            <p>3-4 Virkedager</p>
-                        </label>
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <article>
-                        <h4>Ekspress Pakke til utleveringssted</h4>
-                        <label>
-                            <input type="radio" name="fraktType" value="ekspressPakkeTilUtleveringssted">
-                            Ekspress Pakke til utleveringssted
-                            1-3 Virkedager
-                        </label>
-                    </article>
-                </fieldset>
-                <fieldset>
-                    <article>
-                        <h4>Standard Hjemlevering</h4>
-                        <label>
-                            <input type="radio" name="fraktType" value="standardhjemlevering">
-                            <p>Standard Hjemlevering</p>
-                            <p>5-8 Virkedager</p>
-                        </label>
-                    </article>
-                </fieldset>
-              </section>
-              <!--Betaling-->
-              <section>
+                <form class="loddRett">
+                    <h3>Leveringsvalg</h3>
+                    <label class="boldleveringsAlternativer">
+                        <input type="radio" name="fraktType" value="ekspressHjemlevering">
+                        Ekspress Hjemlevering
+                    </label>
+                    <label class="boldleveringsAlternativer">
+                        <input type="radio" name="fraktType" value="ekspressPakkeTilUtleveringssted">
+                        Ekspress Pakke til utleveringssted
+                    </label>
+                    <label class="boldleveringsAlternativer">
+                        <input type="radio" name="fraktType" value="standardhjemlevering">
+                        Standard Hjemlevering
+                    </label>
+                </form>
+            </section>
+              <section id="betalingsOpplysninger">
                 <header>
                     <h2>4. Betaling</h2>
                 </header>
-                <h4>Kort</h4>
+                <form class="loddRett">
+                <h4>Betal med kort</h4>
                     <label>
                         Kortnummer
                     <input type="number" placeholder="342342****4435" id="kortnummer">
                 </label>
-                Utløpsdato
                 <label>
-                    <input type="date" id="dato">
+                    Utløpsdato
+                <input type="date" id="dato">
                 </label>
                 <label>
                     CVC/CVV
-                    <input type="text" placeholder="CVC/CVV" id="cvc-cvv">
-                    
+                <input type="text" placeholder="CVC/CVV" id="cvc-cvv">
                 </label>
-            </section>
-            <section>
-                <h5 class="hidden">Betaling</h5>
+            </form>
+        </section>
+            <section id="sistebetalingsAlternativ">
                 <p>Å betale inkl. mva</p>
                 <p>1 199kr</p>
-                <button>Fullfør kjøp</button>
-                <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
+                <form class="loddRett">
+                <button id="fullforKjopButton">Fullfør kjøp</button>
+                <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
                     Levrandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
                     <label>
                         <input type="checkbox">
@@ -146,20 +137,10 @@
                         <input type="checkbox">
                         Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
                     </label>
+                </form>
             </section>
-
-
-
-
-
-
-
-
-
-
         </main>
         <footer id="footerKontaktOss">
-            <!---Husk nå at jag har tatt h4 her,,,,,Må endres senere kanskje-->
             <section>
                 <a href="index.html"><h4>Logo</h4></a> 
                 <p id="textBunn">Mauris ultrices fringilla arcu, a lacinia est fringilla sit amet. Etiam lacinia laoreet enim, eget luctus eros efficitur auctor.</p>
