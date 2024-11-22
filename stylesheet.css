@@ -463,6 +463,11 @@
    #shoppingBagbox{
     width: 100%;
    }
+   #shoppingBagbox header h2{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+   }
    #shoppingBagbox article img{
     width: 100%;
    }
@@ -477,6 +482,20 @@
    #dineOpplysniger{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+   }
+   #dineOpplysninger header{
+    padding: 0;
+    margin: 0;
+   }
+   #dineOpplysniger header h2{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 37px;
+    padding-top: 37px;
+    padding-left: 0;
+    margin: 0;
    }
    #dineOpplysniger form{
     display: flex;
@@ -509,9 +528,7 @@
     color: aliceblue;
    }
    #avbryt{
-    right: -10px;
-    position: relative;
-    margin: -18px;
+    width: fit-content;
     text-decoration-line: underline;
     color: blue;
    }
@@ -845,8 +862,6 @@
 
     #tshirt1{
         display: flex;
-        padding: 0;
-        margin: 0;
         max-width: 480px;
 
     }
@@ -891,6 +906,7 @@
      gap: 10px;
     width: 50%;
     flex-wrap: nowrap;
+    padding-left: 164px;
     }
 
 
