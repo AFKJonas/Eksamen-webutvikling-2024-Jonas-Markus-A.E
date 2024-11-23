@@ -25,6 +25,7 @@
         justify-content: flex-start;
         padding: 0;
         position: relative;
+        padding-right: 15%;
     }
     header form input{
         background-color: white;
@@ -66,7 +67,7 @@
     }
 
     .logo{
-        width: 60px;
+        font-size: x-large;
     }
 
     .hoyreForLogo{
@@ -140,7 +141,7 @@
         text-decoration: black;
         padding: 10px;
         font-weight: bold;
-    }
+    } 
     /*Section 1 slutt*/
     /*Section 2 start*/
     #overSectionButtons h3{
@@ -165,6 +166,7 @@
     }
     #section2 p{
         position: relative;
+        width: 100%;
     } 
     #section2 h3{
         position: relative;
@@ -206,7 +208,6 @@
         display: flex;
         max-height: 400px;
         max-width: 113%;
-        margin: -9px;
     }
     
     main #section2 article{
@@ -214,26 +215,25 @@
         justify-content: center;
         flex-direction: column;
         position: relative;
-        top: 32px;
-        gap: 16px;
+        width: 100%;
     }
     main #section2 article ul li{
         display: flex;
         justify-content: flex-start;
         position: relative;
+        width: 100%;
     }
     main #section2 article ul li a{
         padding: 0;
         font-weight: bold;
-        width: 50%;
+        width: 100%;
     }
     main #section2 article ul{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         position: relative;
-        left: -11px;
-        gap: 13px;
+        width: 100%;
     }
 
     /*Section 2 slutt*/
@@ -289,6 +289,7 @@
     #section4 article img{
         max-width: 150px;
         padding: 0;
+        width: 100%;
     }
 
     #section4 header{
@@ -617,9 +618,7 @@
         }
         .flex-container{
             display: flex;
-            justify-content: center;
-            margin: 0 auto;
-            padding: 0; 
+            justify-content: center; 
             max-width: 1200px; 
         }
 
@@ -642,9 +641,9 @@
             width: 100%;
             display: flex;
             align-items: baseline;
-            justify-content: space-between;
             flex-wrap: wrap;
             overflow: hidden;
+            justify-content: space-evenly
         }
 
         h1{
@@ -668,29 +667,37 @@
             max-width: 100%;
         }
 
-        .hoyreForLogo, .venstreForLogo{
+        #hoyreForLogo, #venstreForLogo{
             display: flex;
             padding: 0;
             margin: 0;
             max-width: 100%;
         }
-        .hoyreForLogo{
+        #hoyreForLogo{
             display: flex;
             gap: 10%;
             flex-direction: row;
         }
-        .venstreForLogo{
+        #venstreForLogo{
             display: flex;
             gap: 10%;
             flex-direction: row;
         }
+        
 
         /*Header slutt*/
 
         /*section 1 start*/
-         #section1 section{
-            max-width: 50%;
+        #section1{
+            background-color: rgb(187, 185, 185); 
+            background-position: 100%;
+            max-width: 100%;
         }
+
+
+
+
+
         /*section slutt*/
 
 
@@ -746,14 +753,15 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows:repeat(3, 1fr);
+        max-width: 100%;
        }
        /*Section 2 slutt*/
        
-
-
-
     /*Våre mest populære kategorier*/
     /*Section 3 med flex*/
+    #section3{
+        top: -139px;
+    }
    
     .c1-5 {
         background-size: cover;
@@ -763,10 +771,6 @@
     }
        #cKort{
         display: grid;
-        grid-template-columns: repeat( 3, 386px);
-        grid-template-rows: auto auto;
-        padding: 0;
-        margin: 0;
         gap: 2px;
        }
        #cKort section article{
@@ -776,14 +780,13 @@
 
     #c1, #c2, #c3{
         max-width: 386px;
-}
-#c4{
-        max-width: 864px;
-       }
+    }
+    #c4{
+        max-width: 864px;  
+    }
     #c5{
         max-width: 300px;
-    } 
-
+    }
     #c1{
         display: grid;
         grid-column-start: 1;
@@ -813,6 +816,7 @@
         grid-row-start: 2;
         grid-row-end: 3;
         background-image: url("Bilder/skateboard.jpg");
+      
     }
     #c5{
         grid-column-start: 3;
@@ -820,6 +824,7 @@
         grid-row-start: 2;
         grid-row-end: 3;
         background-image: url("Bilder/ps3.jpg");
+        
     } 
     /*Section 3 slutt*/
        
