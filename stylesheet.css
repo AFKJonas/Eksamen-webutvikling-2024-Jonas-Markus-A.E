@@ -11,6 +11,7 @@
     .flex-container{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
 }
 
     /*Header start*/
@@ -50,14 +51,16 @@
         display: flex;
         justify-content: flex-start;
         flex-direction: column; 
-        gap: 15px;
+        gap: 24px;
     }
 
     header nav ul, li, a{
-        padding: 0;
         margin: 0;
         padding: 0;
-    }
+        flex-direction: column;
+        gap: 26px;
+}
+
 
     .venstreForLogo{
         display: flex;
@@ -95,11 +98,11 @@
         justify-content: flex-end;
     }
     .fa-regular{
-        /*Kopiert linjene under ifra ChatGPT.com*/
+        /*Kopierte linjene under ifra ChatGPT.com, siden har ikke lært dette*/
         color: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #000;
-        /*Kopier linjene over ifra ChatGPT.com*/
+        /*Kopierte linjene over ifra ChatGPT.com, siden har ikke lært dette*/
     }
 
 
@@ -410,7 +413,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
+    max-width: 700px;
+}
    #produktKort section article{
     display: flex;
     flex-direction: column;
@@ -446,7 +450,6 @@
     text-decoration: underline;
     font-size: larger;
    }
-   aside
 
 
     /*Product.html Slutt*/
@@ -480,12 +483,7 @@
     margin: 0;
    }
 
-   #dineOpplysniger{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-   }
+ 
    #dineOpplysninger header{
     padding: 0;
     margin: 0;
@@ -497,6 +495,10 @@
     padding-top: 37px;
     padding-left: 0;
     margin: 0;
+   }
+   #fornavnFelt, #etterNavnFelt, #gateAdresseFelt, #postNummerFelt, #postStedFelt{
+    display: flex;
+    flex-direction: column;
    }
    #dineOpplysniger form{
     display: flex;
@@ -611,7 +613,9 @@
 
     /*MediaQueries Desktop*/
     /*ALT SOM ER STØRRE ENN 588 blir skrevet ut*/
-    @media only screen and (min-width: 602px) {
+    
+                                /* Før 602px */
+    @media only screen and (min-width: 823px) {
         /*Header start*/
         .flex-container{
             max-width: 100%;
@@ -903,16 +907,165 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+    width: 700px;
    }  
     /*Aside*/
     aside{
     display: flex;
     flex-direction: column;
-     gap: 10px;
-    width: 50%;
+    gap: 10px;
+    width: 440px;
     flex-wrap: nowrap;
-    padding-left: 164px;
     }
+
+    /*Checkout.html*/
+    #shoppingBagbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) den linjen, MEN endret fargen selv */
+    
+    }
+    main #shopingBagBox article{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    }
+    .checkoutArticleProduktKort {
+        width: 50%;
+    }
+    .checkoutArticleProduktKort a{
+        display: flex;
+        flex-direction: row;
+    }
+    .checkoutProduktInfo{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100%;
+    }
+
+    #mellomromiFraShoppingBagen{
+        padding-top: 65px;
+    }
+    #dineOpplysniger form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding-top: 10%;
+    }
+    #pleveringsadresse{
+        padding-left: 2%;
+    } 
+    #fornavnFelt{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #etterNavnFelt{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #gateAdresseFelt{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #postNummerFelt{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #postStedFelt{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*Seksjon for lagre / avbryt*/
+    #lagre{
+        width: 100%;
+    }
+    #avbryt{
+        display: flex;
+        align-items: center;
+        width: 100%;  
+    }
+    /*Leverings Alternativer*/
+    #leveringsAlternativer{
+        border: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) den linjen, MEN endret fargen selv */
+    }
+    #leveringsAlternativer h3{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .kantRundtLeveringsvalg{
+        border: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) den linjen, MEN endret fargen selv */
+        width: 70%;
+    }
+    .kantRundtLeveringsvalg p{
+        font-weight: bold;
+        color: #939191b8;
+    }
+    /*Betaling*/
+    #betalingsOpplysninger form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    #betalingsOpplysninger h2{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #betalingsfeltKOrtNR{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #betalingsUtløpsDato{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #betalingsCvC{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #betalingsOpplysninger{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) "1px solid rgba(0, 0, 0, 0.06)" */
+    }
+    /*Siste betalings alternativene*/
+    #sistebetalingsAlternativ{
+
+    }
+
+
+
+
+
+
+
 
 
      /*Media queries slutt*/
