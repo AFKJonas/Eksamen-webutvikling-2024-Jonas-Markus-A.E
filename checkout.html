@@ -33,7 +33,7 @@
         </nav>
     </header>
         <main id="checkoutMainInnhold">
-                <h2>Kasse</h2>
+                <h2 id="kasseOverskrift">Kasse</h2>
             <section id="shoppingBagbox">
                     <h2>1. Shoppingbagen din</h2>
                 <article class="checkoutArticleProduktKort">
@@ -152,19 +152,21 @@
             </section>
             <section id="sistebetalingsAlternativ">
                 <p>Å betale inkl. mva</p>
-                <p>1 199kr</p>
+                <p id="totalSluttPris">1 199kr</p>
                 <form class="loddRett">
                 <button id="fullforKjopButton">Fullfør kjøp</button>
-                <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
-                    Levrandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
-                    <label>
-                        <input type="checkbox">
-                        Ja takk! send nyhetsbrev til meg.
-                    </label>
-                    <label>
-                        <input type="checkbox">
-                        Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
-                    </label>
+                <section id="sistebetalingsAvhukningsBokser">
+                    <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
+                        Levrandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                        <label>
+                            <input type="checkbox">
+                            Ja takk! send nyhetsbrev til meg.
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
+                        </label>
+                    </section>
                 </form>
             </section>
         </main>
