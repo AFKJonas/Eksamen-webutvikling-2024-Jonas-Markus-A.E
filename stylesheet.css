@@ -7,14 +7,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
-    /*index.html*/
+/*index.html*/
     .flex-container{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
 }
 
-    /*Header start*/
+/*Header start*/
     #global-header{
         display: flex;
         flex-direction: column;
@@ -53,6 +53,7 @@
         gap: 24px;
     }
 
+
     header nav ul, li, a{
         margin: 0;
         padding: 0;
@@ -61,22 +62,24 @@
 }
 
 
-    .venstreForLogo{
+    #venstreForLogo{
         display: flex;
         justify-content: flex-start;
         padding: 0;
         flex-direction: column;
-    }
+        gap: 12px;
+    } 
 
     .logo{
         font-size: x-large;
     }
 
-    .hoyreForLogo{
+    #hoyreForLogo{
         display: flex;
         justify-content: flex-start;
         padding: 0;
         flex-direction: column; 
+        gap: 12px;
     }
 
     h1{
@@ -105,10 +108,10 @@
     }
 
 
-    /*Header slutt*/
+/*Header slutt*/
 
-    /*MAIN*/
-    /*Section 1 start*/
+/*MAIN*/
+/*Section 1 start*/
     main{
         justify-content: flex-start;
     } 
@@ -144,10 +147,10 @@
         padding: 10px;
         font-weight: bold;
     } 
-    /*Section 1 slutt*/
-    /*Section 2 start*/
+/*Section 1 slutt*/
+/*Section 2 start*/
     #overSectionButtons h3{
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold; 
     }
     #section2{
@@ -208,16 +211,11 @@
 
     main #section2 article img{
         display: flex;
-        max-height: 400px;
-        max-width: 113%;
+        max-width: 100%;
     }
     
     main #section2 article{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         position: relative;
-        width: 100%;
     }
     main #section2 article ul li{
         display: flex;
@@ -238,12 +236,11 @@
         width: 100%;
     }
 
-    /*Section 2 slutt*/
-    /*Section 3 start*/
+/*Section 2 slutt*/
+/*Section 3 start*/
     #section3{
         position: relative;
         top: 104px;
-        display: flex;
         flex-direction: column;
         padding: 0;
         gap: 16px;
@@ -257,9 +254,9 @@
         border: 1px solid #000000;
         display: flex;
         justify-content: center;
-        padding: 16px;
-        margin: 5px; 
+        padding: 16px; 
         height: 277px;
+        margin: 5px;
     }
     .kategoriKortSkrift{
         display: flex;
@@ -267,8 +264,8 @@
         justify-content: center;
     } 
 
-    /*Section 3 slutt*/
-    /*Section 4 Start*/
+/*Section 3 slutt*/
+/*Section 4 Start*/
     #section4{
         position: relative;
         top: 104px;
@@ -319,11 +316,11 @@
         text-transform: none;
     }
 
-    /*Section 4 slutt*/
+/*Section 4 slutt*/
 
     
 
-    /*Footer start*/
+/*Footer start*/
     footer{
         position: relative;
         top: 137px;
@@ -345,7 +342,6 @@
         flex-direction: column;
         top: 25px;
         position: relative;
-        width: 100%;
     }
     footer section ul{
         gap: 9px;
@@ -385,12 +381,11 @@
     #medieIkoner{
         gap: 30px;
     }
-    /*Footer slutt*/
+/*Footer slutt*/
 
 
 
-    /*Product.html Start*/
-
+/*Product.html Start*/
     #breadCrumbs{
     display: flex;
         
@@ -402,7 +397,7 @@
     #breadCrumbMakert{
     font-weight: bold;
     } 
-    /*Produkt bilder*/
+/*Produkt bilder*/
     #bildeKlasseProdukt{
     max-width: 100%;
     padding: 0;
@@ -413,6 +408,7 @@
     flex-direction: column;
     justify-content: center;
     max-width: 700px;
+    max-width: 100%;
 }
    #produktKort section article{
     display: flex;
@@ -427,7 +423,7 @@
     margin: 0;
    }
 
-   /*lignende produkter*/ 
+/*lignende produkter*/ 
     main #section2 h2{
     margin: 0;
     padding: 0;
@@ -435,7 +431,7 @@
 
 
 
-   /*Aside*/
+/*Aside*/
    aside{
     max-width: 440px;
     display: flex;
@@ -451,9 +447,9 @@
    }
 
 
-    /*Product.html Slutt*/
+/*Product.html Slutt*/
 
-    /*Checkout.html Start*/
+/*Checkout.html Start*/
     h2{
     font-weight: bold;
     text-transform: uppercase;
@@ -462,6 +458,7 @@
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
+    gap: 30px;
     }
    #shoppingBagbox{
     width: 100%;
@@ -611,17 +608,11 @@
     #sistebetalingsAlternativ label input{
         padding-top: 20px;
     }
-
-
-
-
-    /*Checkout.html Slutt*/
+/*Checkout.html Slutt*/
 
 
     /*MediaQueries Desktop*/
     /*ALT SOM ER STØRRE ENN 588 blir skrevet ut*/
-    
-                                /* Før 602px */
     @media only screen and (min-width: 823px) {
         /*Header start*/
         .flex-container{
@@ -654,7 +645,7 @@
             align-items: baseline;
             flex-wrap: wrap;
             overflow: hidden;
-            justify-content: space-evenly
+            justify-content: space-between;
         }
 
         h1{
@@ -696,24 +687,19 @@
         }
         
 
-        /*Header slutt*/
+/*Header slutt*/
 
-        /*section 1 start*/
+/*section 1 start*/
         #section1{
             background-color: rgb(187, 185, 185); 
             background-position: 100%;
             max-width: 100%;
         }
+/*section slutt*/
 
 
 
-
-
-        /*section slutt*/
-
-
-
-        /*Footer start*/
+/*Footer start*/
        #footer-flex{
             display: flex;
             flex-direction: row; 
@@ -735,11 +721,13 @@
             flex-direction: row;
             text-align: left;
         }
-         /*Footer slutt*/
-        
+/*Footer slutt*/
+     
 
-       /*Section 2 start*/
-       /*Våre mest populære produkter*/
+
+
+/*Section 2 start*/
+/*Våre mest populære produkter*/
        
        #overSectionButtons{
         display: flex;
@@ -757,7 +745,7 @@
        .populareProduktKort{
         margin-right: 1rem;
         margin-left: 1rem;
-        width: 350px; 
+        max-width: 350px; 
         
        }
        #prodKort{
@@ -765,81 +753,67 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows:repeat(3, 1fr);
         max-width: 100%;
+        justify-items: center;
        }
-       /*Section 2 slutt*/
+/*Section 2 slutt*/
        
-    /*Våre mest populære kategorier*/
-    /*Section 3 med flex*/
-    #section3{
-        top: -139px;
-    }
-   
-    .c1-5 {
+/*Våre mest populære kategorier*/
+/*Section 3 med flex*/
+       #section3{
+        display: flex;
+        top: -166px;
+       }
+       #section3 article{
+        border: none;
+        width: 100%;
+        margin: 0;
+       }
+       #cKort{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        justify-content: space-around;
+       }
+       #c1{
+        max-width: 386px;
+        background-image: url("Bilder/sko.jpg");
+        /*Bildet er tatt ifra: https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4*/
+       }
+       #c2{
+        background-image: url("Bilder/kaktus.jpg");
+        /*Bildet er tatt ifra: https://fastly.picsum.photos/id/248/3872/2592.jpg?hmac=_F3LsKQyGyWnwQJogUtsd_wyx2YDYnYZ6VZmSMBCxNI*/
+        max-width: 386px;
+       }
+        #c3{
+        background-image: url("Bilder/tastatur.jpg");
+        /*Bildet er tatt ifra: https://fastly.picsum.photos/id/60/1920/1200.jpg?hmac=fAMNjl4E_sG_WNUjdU39Kald5QAHQMh-_-TsIbbeDNI*/
+        max-width: 386px;
+        }
+        #c4{
+        background-image: url("Bilder/skateboard.jpg");
+        /*Bildet er tatt ifra: https://fastly.picsum.photos/id/157/5000/3914.jpg?hmac=A23PziOOpi_DIdiPRI30m9_1A8keOtMF3a6Vb-D7dRA*/
+        max-width: 864px;
+        }
+        #c5{
+        background-image: url("Bilder/ps3.jpg");
+        /*Bildet er tatt ifra: https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM*/
+        max-width: 300px;
+        }
+        /*sentrerer bildene inni article*/
+        #c1, #c2, #c3, #c4, #c5{
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-        border: none;
-    }
-       #cKort{
-        display: grid;
-        gap: 2px;
-       }
-       #cKort section article{
-        display: grid;
-        border: none;
-       }
+        background-repeat: no-repeat;   
+        }
 
-    #c1, #c2, #c3{
-        max-width: 386px;
-    }
-    #c4{
-        max-width: 864px;  
-    }
-    #c5{
-        max-width: 300px;
-    }
-    #c1{
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-image: url("Bilder/sko.jpg");
-    }
-    
-    #c2{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-image: url("Bilder/kaktus.jpg");
-    }
-    #c3{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-image: url("Bilder/tastatur.jpg");
-    }
-    #c4{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-image: url("Bilder/skateboard.jpg");
-      
-    }
-    #c5{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-image: url("Bilder/ps3.jpg");
-        
-    } 
-    /*Section 3 slutt*/
+
+
+
+
+
+/*Section 3 slutt*/
        
-    /*Andmeldelser start*/
+/*Andmeldelser start*/
     #section4 {
         position: relative;
         top: 104px;
@@ -863,11 +837,14 @@
     h5{
         font-size: x-large;
     }
-    /*Andmeldelser slutt*/
+/*Andmeldelser slutt*/
 
 
-    /*Ny Side!*/
-     /*Product.html*/
+/*Ny Side!*/
+/*Product.html*/
+    #sectionProduktKort{
+        display: flex;
+    }
      #flex-container{
         display: flex;
         flex-direction: inherit;
@@ -907,16 +884,19 @@
     .lignendeProduktKort{
         margin-right: 1rem;
         margin-left: 1rem;
-        width: 350px;
+        max-width: 350px;
     }
     #produktKort{
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    width: 700px;
-   }  
-    /*Aside*/
+    width: 100%;
+   }
+   
+
+
+/*Aside*/
     aside{
     display: flex;
     flex-direction: column;
@@ -925,7 +905,7 @@
     flex-wrap: nowrap;
     }
 
-    /*Checkout.html*/
+/*Checkout.html*/
     #kasseOverskrift{
         display: flex;
         justify-content: center;
@@ -1007,7 +987,7 @@
         grid-row-start: 4;
         grid-row-end: 5;
     }
-    /*Seksjon for lagre / avbryt*/
+/*Seksjon for lagre / avbryt*/
     #lagre{
         width: 100%;
     }
@@ -1016,7 +996,7 @@
         align-items: center;
         width: 100%;  
     }
-    /*Leverings Alternativer*/
+/*Leverings Alternativer*/
     #leveringsAlternativer{
         border: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) den linjen, MEN endret fargen selv */
     }
@@ -1034,7 +1014,7 @@
         color: #939191b8;
         padding: inherit;
     }
-    /*Betaling*/
+/*Betaling*/
     #betalingsOpplysninger form{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1071,7 +1051,7 @@
     #betalingsOpplysninger{
         border-bottom: 1px solid rgba(0, 0, 0, 0.06); /* <---CoPilot fikset(Kopierte direkte) "1px solid rgba(0, 0, 0, 0.06)" */
     }
-    /*Siste betalings alternativene*/
+/*Siste betalings alternativene*/
     #totalSluttPris{
         font-size: x-large;
         font-weight: bold;
@@ -1092,5 +1072,5 @@
 
 
 
-     /*Media queries slutt*/
+/*Media queries slutt*/
 }
