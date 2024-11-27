@@ -813,7 +813,7 @@
        
 /*Våre mest populære kategorier*/
 /*Section 3 med flex*/
-       #vareMestPopulareOverskrift{
+       /* #vareMestPopulareOverskrift{
         font-weight: bold;
         font-size: x-large;
         text-transform: none;
@@ -850,7 +850,7 @@
     }
     #c5{
         max-width: 300px;
-    }
+    } */
 
 
 
@@ -1125,3 +1125,45 @@
 
 /*Media queries slutt*/
 }
+@media only screen and (min-width: 1207px ) {
+    #vareMestPopulareOverskrift{
+        font-weight: bold;
+        font-size: x-large;
+        text-transform: none;
+       }
+       #section3{
+        display: flex;
+        top: -166px;
+        width: 100%;
+       }
+       #section3 article{
+        border: none;
+        width: 100%;
+        margin: 0;
+        width: 100%;
+       }
+       #cKort{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        justify-content: space-around;
+        width: 100%;
+       }
+    #c1{
+        max-width: 386px;
+    }
+    #c2{
+        max-width: 386px;
+    }
+    #c3{
+        max-width: 386px;
+    }
+    #c4{
+        max-width: 864px;
+    }
+    #c5{
+        max-width: 300px;
+    }
+
+}
+
