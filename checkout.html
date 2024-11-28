@@ -90,7 +90,7 @@
                     </section>
                     <section id="postNummerFelt">
                         <label for="postnummer">Postnummer</label>
-                        <input id="postnummer" type="number" placeholder="1752*" class="Opplysninger" maxlength="12" required>
+                        <input id="postnummer" type="number" placeholder="1752*" class="Opplysninger" required>
                     </section>
                     <section id="postStedFelt">
                         <label for="poststed">Poststed</label>
@@ -102,10 +102,9 @@
                     </section>
                 </form>
             </section>
-
-            <section id="leveringsAlternativer">
+            <form class="loddRett">
+                <section id="leveringsAlternativer">
                     <h2>3. Levering</h2>
-                <form class="loddRett">
                     <h3 id="leveringsValgOverSkrift">Leveringsvalg</h3>
                     <section class="kantRundtLeveringsvalg">
                         <label class="boldleveringsAlternativer">
@@ -128,11 +127,9 @@
                         </label>
                         <p>5-8 Virkedager</p>
                     </section>
-                </form>
-            </section>
-              <section id="betalingsOpplysninger">
-                <h2>4. Betaling</h2>
-                <form class="loddRett">
+                </section>
+                <section id="betalingsOpplysninger">
+                    <h2>4. Betaling</h2>
                     <h4>Betal med kort</h4>
                     <section id="betalingsfeltKOrtNR">
                         <label>
@@ -152,16 +149,13 @@
                             <input type="text" placeholder="CVC/CVV" id="cvc-cvv" required>
                         </label>
                     </section>
-                </form>
-            </section>
-            <section id="sistebetalingsAlternativ">
-                <p>Å betale inkl. mva</p>
-                <p id="totalSluttPris">1 199kr</p>
-                <form class="loddRett">
-                <button id="fullforKjopButton" type="submit">Fullfør kjøp</button>
-                <form action=""></form>
-                <section id="sistebetalingsAvhukningsBokser">
-                    <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
+                </section>
+                <section id="sistebetalingsAlternativ">
+                    <p>Å betale inkl. mva</p>
+                    <p id="totalSluttPris">1 199kr</p>
+                    <button id="fullforKjopButton" type="submit">Fullfør kjøp</button>
+                    <section id="sistebetalingsAvhukningsBokser">
+                        <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
                         Levrandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
                         <label>
                             <input type="checkbox">
@@ -169,11 +163,11 @@
                         </label>
                         <label>
                             <input type="checkbox">
-                            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
+                            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                         </label>
                     </section>
-                </form>
-            </section>
+                </section>
+            </form>
         </main>
         <footer id="footerKontaktOss">
             <section>
