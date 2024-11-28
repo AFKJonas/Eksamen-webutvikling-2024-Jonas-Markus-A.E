@@ -74,36 +74,35 @@
             </section>
             <section id="dineOpplysniger">
                     <h2 id="mellomromiFraShoppingBagen">2. Dine Opplysninger</h2>
-                <form class="vannRett">
-                    <p id="pleveringsadresse">Leveringsadresse</p>
-                <section id="fornavnFelt">
-                    <label for="fornavn">Fornavn</label>
-                    <input id="fornavn" name="fornavn" placeholder="Nora*" class="Opplysninger" required>
-                </section>
-                <section id="etterNavnFelt">
-                    <label for="etternavn">Etternavn</label>
-                    <input id="etternavn" name="etternavn" placeholder="Nordman*" class="Opplysninger" required>
-                </section>
-                <section id="gateAdresseFelt">
-                    <label for="gateAdresse">Gateadresse</label>
-                    <input id="gateAdresse" name="gateAdresse" placeholder="BRA veien 4*" class="Opplysninger" required>
-                </section>
-                <section id="postNummerFelt">
-                    <label for="postnummer">Postnummer</label>
-                    <input id="postnummer" type="number" placeholder="1752*" class="Opplysninger" required>
-                </section>
-                <section id="postStedFelt">
-                    <label for="poststed">Poststed</label>
-                    <input id="poststed" name="poststed" placeholder="Halden*" class="Opplysninger" required>
-                </section>
+                <form class="vannRett" id="dineOpplysningerSkjema">
+                        <p id="pleveringsadresse">Leveringsadresse</p>
+                    <section id="fornavnFelt">
+                        <label for="fornavn">Fornavn</label>
+                        <input id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" name="fornavn" placeholder="Nora*" class="Opplysninger" maxlength="12" required>
+                    </section>
+                    <section id="etterNavnFelt">
+                        <label for="etternavn">Etternavn</label>
+                        <input id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" name="etternavn" placeholder="Nordman*" class="Opplysninger" maxlength="12" required>
+                    </section>
+                    <section id="gateAdresseFelt">
+                        <label for="gateAdresse">Gateadresse</label>
+                        <input id="gateAdresse" name="gateAdresse" placeholder="BRA veien 4*" class="Opplysninger" maxlength="12" required>
+                    </section>
+                    <section id="postNummerFelt">
+                        <label for="postnummer">Postnummer</label>
+                        <input id="postnummer" type="number" placeholder="1752*" class="Opplysninger" maxlength="12" required>
+                    </section>
+                    <section id="postStedFelt">
+                        <label for="poststed">Poststed</label>
+                        <input id="poststed" name="poststed" placeholder="Halden*" class="Opplysninger" maxlength="12"  required>
+                    </section>
+                    <section id="opplyningsKnapper" class="loddRett">
+                        <button id="lagre" type="submit">Lagre</button>
+                        <a id="avbryt" href="#">Avbryt</a>
+                    </section>
                 </form>
-            </section> 
-            <section id="opplyningsKnapper" class="loddRett">
-                <form class="loddRett">
-                <button id="lagre">Lagre</button>
-                <a id="avbryt" href="#">Avbryt</a>
-            </form>
             </section>
+
             <section id="leveringsAlternativer">
                     <h2>3. Levering</h2>
                 <form class="loddRett">
@@ -159,7 +158,8 @@
                 <p>Å betale inkl. mva</p>
                 <p id="totalSluttPris">1 199kr</p>
                 <form class="loddRett">
-                <button id="fullforKjopButton">Fullfør kjøp</button>
+                <button id="fullforKjopButton" type="submit">Fullfør kjøp</button>
+                <form action=""></form>
                 <section id="sistebetalingsAvhukningsBokser">
                     <p id="mellomromTekst">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fulllstendige.
                         Levrandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
