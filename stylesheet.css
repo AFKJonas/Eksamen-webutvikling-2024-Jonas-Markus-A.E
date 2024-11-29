@@ -283,6 +283,9 @@
     #c2{
         background-image: url("Bilder/kaktus.jpg");
         color: #000;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
 /*Bildet er tatt ifra: https://fastly.picsum.photos/id/248/3872/2592.jpg?hmac=_F3LsKQyGyWnwQJogUtsd_wyx2YDYnYZ6VZmSMBCxNI*/
     }
     #c3{
@@ -292,16 +295,19 @@
     }
     #c4{
         background-image: url("Bilder/skateboard.jpg");
-        color: #000;
+        color: #f00;
 /*Bildet er tatt ifra: https://fastly.picsum.photos/id/157/5000/3914.jpg?hmac=A23PziOOpi_DIdiPRI30m9_1A8keOtMF3a6Vb-D7dRA*/
     }
     #c5{
-        background-image: url("Bilder/ps3.jpg");
-        color: #000;
-/*Bildet er tatt ifra: https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM*/
+        background-image: url("Bilder/Grønn.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #e60909;
+/*Bildet er tatt ifra: https://fastly.picsum.photos/id/785/5000/3333.jpg?hmac=3GuDG51IE9rCkkE47hBZtjMD69oZmf15a4aSv1buifY*/
     }
 /*sentrerer bildene inni article*/
-    #c1, #c2, #c3, #c4, #c5{
+    #c1, #c3, #c4{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;   
